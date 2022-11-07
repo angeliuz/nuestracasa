@@ -1,0 +1,23 @@
+import {
+    init,
+    setCodigoActividad,
+    setCodigoDiapositiva,
+    setEstadoSolucionario,
+    setIntentos
+}
+    from "./firebase.js"
+
+window.addEventListener("DOMContentLoaded", () => {
+    console.log("App Cargada")
+
+    init();
+
+    // setCodigoActividad("NC34U5A01")
+    setCodigoDiapositiva("NC34U5A01", "NC34U5A01D01")
+    setEstadoSolucionario("NC34U5D1", "true")
+
+    document.getElementById("btn_intentos").addEventListener("click", () => {
+        setIntentos("NC34U5A01", "NC34U5A01D01");
+    })
+
+})
