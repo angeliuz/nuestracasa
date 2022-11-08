@@ -83,6 +83,18 @@ export const setIntentos = async (cod_actividad, cod_diapositiva) => {
     }
 }
 
+
+export const getIntentos = async (cod_actividad, cod_diapositiva) => {
+    const docRef = doc(db, "actividades", getUserIdConecta());
+    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+    console.log("Document data:", docSnap.data().intentos);
+
+    var intentos = docSnap.data().intentos;
+
+    return intentos;
+}
+
+
 export const setEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
@@ -97,6 +109,16 @@ export const setEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
             console.log("Estado Solución", docSnap.data()["solucion"]);
         })
     }
+}
+
+export const getEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
+    const docRef = doc(db, "actividades", getUserIdConecta());
+    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+    console.log("Document data:", docSnap.data().solucion);
+
+    var intentos = docSnap.data().solucion;
+
+    return intentos;
 }
 
 const getUserIdConecta = () => {

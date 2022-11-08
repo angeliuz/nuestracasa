@@ -3,7 +3,9 @@ import {
     setCodigoActividad,
     setCodigoDiapositiva,
     setEstadoSolucionario,
-    setIntentos
+    setIntentos,
+    getIntentos,
+    getEstadoSolucionario
 }
     from "./firebase.js"
 
@@ -16,11 +18,17 @@ window.addEventListener("DOMContentLoaded", () => {
     setCodigoDiapositiva("NC34U5A01", "NC34U5A01D01");
 
 
-    document.getElementById("btn_intentos").addEventListener("click", () => {
+    document.getElementById("btn_setIntentos").addEventListener("click", () => {
         setIntentos("NC34U5A01", "NC34U5A01D01");
     })
-    document.getElementById("btn_solucionario").addEventListener("click", () => {
+    document.getElementById("btn_setSolucionario").addEventListener("click", () => {
         setEstadoSolucionario("NC34U5A01", "NC34U5A01D01")
+    })
+    document.getElementById("btn_getIntentos").addEventListener("click", () => {
+        getIntentos("NC34U5A01", "NC34U5A01D01")
+    })
+    document.getElementById("btn_getSolucionario").addEventListener("click", () => {
+        getEstadoSolucionario("NC34U5A01", "NC34U5A01D01")
     })
 
 })
