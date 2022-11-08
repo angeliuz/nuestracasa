@@ -52,7 +52,8 @@ export const setCodigoActividad = (cod_actividad) => {
 export const setCodigoDiapositiva = async (cod_actividad, cod_diapositiva) => {
     // CONFIGURATION OF ACTIVITY AND SLIDE
     const docRef = doc(db, "actividades", getUserIdConecta());
-    const docSnap = await getDoc(docRef);
+    const docRef2 = doc(docRef, cod_actividad, cod_diapositiva);
+    const docSnap = await getDoc(docRef2);
 
     if (!docSnap.exists()) {
         setDoc(doc(docRef, cod_actividad, cod_diapositiva), {})
