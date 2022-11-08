@@ -7,6 +7,7 @@ import {
     doc,
     setDoc,
     updateDoc,
+    increment
 } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore.js"
 
 // Your web app's Firebase configuration
@@ -22,6 +23,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore();
+
+//const increment = initializeApp.db.FieldValue.increment(1)
 
 export const init = async () => {
 
@@ -46,15 +49,21 @@ export const setCodigoActividad = (cod_actividad) => {
     console.log(cod_actividad);
 }
 
-export const setCodigoDiapositiva = (cod_actividad, cod_diapositiva) => {
+export const setCodigoDiapositiva = async (cod_actividad, cod_diapositiva) => {
     // CONFIGURATION OF ACTIVITY AND SLIDE
     const docRef = doc(db, "actividades", getUserIdConecta());
-    setDoc(doc(docRef, cod_actividad, cod_diapositiva), {})
-        .then(async () => {
-            console.log("Datos de diapo guardadas")
-        });
-    localStorage.setItem("cod_diapositiva", cod_diapositiva);
-    console.log(cod_diapositiva);
+    const docSnap = await getDoc(docRef);
+
+    if (!docSnap.exists()) {
+        setDoc(doc(docRef, cod_actividad, cod_diapositiva), {})
+            .then(async () => {
+                console.log("Datos de diapo guardadas")
+            });
+        localStorage.setItem("cod_diapositiva", cod_diapositiva);
+        console.log(cod_diapositiva);
+    } else {
+        console.log("Ya existe el documento")
+    }
 }
 
 export const setIntentos = async (cod_actividad, cod_diapositiva) => {
@@ -65,7 +74,7 @@ export const setIntentos = async (cod_actividad, cod_diapositiva) => {
         console.log("NO existe");
     } else {
         await updateDoc(doc(docRef, cod_actividad, cod_diapositiva), {
-            intentos: 1
+            intentos: increment(1)
         }).then(async () => {
             docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
             console.log("Existe", docSnap.data()["intentos"]);
@@ -73,13 +82,20 @@ export const setIntentos = async (cod_actividad, cod_diapositiva) => {
     }
 }
 
-export const setEstadoSolucionario = (cod_actividad, estadoSolucionario) => {
+export const setEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
+    const docRef = doc(db, "actividades", getUserIdConecta());
+    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
 
-    if (cod_actividad == "NC34U5D1") {
-        localStorage.setItem("solucion", estadoSolucionario)
+    if (!docSnap.exists()) {
+        console.log("No existe");
+    } else {
+        await updateDoc(doc(docRef, cod_actividad, cod_diapositiva), {
+            solucion: true
+        }).then(async () => {
+            docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+            console.log("Estado Solución", docSnap.data()["solucion"]);
+        })
     }
-
-    console.log(estadoSolucionario);
 }
 
 const getUserIdConecta = () => {
