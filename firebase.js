@@ -121,6 +121,60 @@ export const getEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
     return intentos;
 }
 
+
+export const setLogro = async (cod_actividad, cod_diapositiva, logro) => {
+    const docRef = doc(db, "actividades", getUserIdConecta());
+    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+
+    if (!docSnap.exists()) {
+        console.log("No existe");
+    } else {
+        await updateDoc(doc(docRef, cod_actividad, cod_diapositiva), {
+            logro: logro
+        }).then(async () => {
+            docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+            console.log("Logro: ", docSnap.data()["logro"]);
+        })
+    }
+}
+
+export const getLogro = async (cod_actividad, cod_diapositiva) => {
+    const docRef = doc(db, "actividades", getUserIdConecta());
+    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+    console.log("Logro:", docSnap.data().logro);
+
+    var logro = docSnap.data().logro;
+
+    return logro;
+}
+
+export const setRespuesta = async (cod_actividad, cod_diapositiva, respuesta) => {
+    const docRef = doc(db, "actividades", getUserIdConecta());
+    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+
+    if (!docSnap.exists()) {
+        console.log("No existe");
+    } else {
+        await updateDoc(doc(docRef, cod_actividad, cod_diapositiva), {
+            respuesta: respuesta
+        }).then(async () => {
+            docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+            console.log("Respuesta: ", docSnap.data()["respuesta"]);
+        })
+    }
+}
+
+export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
+    const docRef = doc(db, "actividades", getUserIdConecta());
+    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+    console.log("Respuesta:", docSnap.data().respuesta);
+
+    var respuesta = docSnap.data().respuesta;
+
+    return respuesta;
+}
+
+
 const getUserIdConecta = () => {
     var str = localStorage.getItem('mm_data');
     var arregloData = new Array();

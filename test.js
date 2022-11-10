@@ -5,7 +5,11 @@ import {
     setEstadoSolucionario,
     setIntentos,
     getIntentos,
-    getEstadoSolucionario
+    getEstadoSolucionario,
+    setLogro,
+    getLogro,
+    setRespuesta,
+    getRespuesta
 }
     from "./firebase.js"
 
@@ -29,6 +33,18 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     document.getElementById("btn_getSolucionario").addEventListener("click", () => {
         getEstadoSolucionario("NC34U5A01", "NC34U5A01D01")
+    })
+    document.getElementById("btn_setLogro").addEventListener("click", () => {
+        setLogro("NC34U5A01", "NC34U5A01D01", "100")
+    })
+    document.getElementById("btn_getLogro").addEventListener("click", () => {
+        getLogro("NC34U5A01", "NC34U5A01D01")
+    })
+    document.getElementById("btn_setRespuesta").addEventListener("click", () => {
+        setRespuesta("NC34U5A01", "NC34U5A01D01", "esta es la respuesta")
+    })
+    document.getElementById("btn_getRespuesta").addEventListener("click", () => {
+        getRespuesta("NC34U5A01", "NC34U5A01D01")
     })
 
 })
