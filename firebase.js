@@ -87,11 +87,13 @@ export const setIntentos = async (cod_actividad, cod_diapositiva) => {
 export const getIntentos = async (cod_actividad, cod_diapositiva) => {
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
-    console.log("Document data:", docSnap.data().intentos);
+    console.log(">Intentos:", docSnap.data().intentos);
 
     var intentos = docSnap.data().intentos;
 
-    return intentos;
+    localStorage.setItem(cod_diapositiva+"intento_01",intentos);
+
+    return parseInt(intentos);
 }
 
 
