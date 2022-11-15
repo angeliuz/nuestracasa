@@ -27,4 +27,6 @@ window.addEventListener("DOMContentLoaded", () => {
     window.setRespuesta = setRespuesta;
     window.getRespuesta = getRespuesta;
 
+    var player = null;
+
 })

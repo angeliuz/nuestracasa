@@ -91,7 +91,8 @@ export const getIntentos = async (cod_actividad, cod_diapositiva) => {
 
     var intentos = docSnap.data().intentos;
 
-    localStorage.setItem(cod_diapositiva+"intento_01",intentos);
+    localStorage.setItem(cod_diapositiva + "_intentos", intentos);
+    window.player.SetVar("intento_01", Number(localStorage.getItem(cod_diapositiva + "_intentos")));
 
     return parseInt(intentos);
 }
