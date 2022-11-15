@@ -2,127 +2,127 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5x7c2H7BZnA":
+      case "6BdxIdGlWcZ":
         Script1();
         break;
-      case "5pNW7EyHnzH":
+      case "6BP4MTC3OfT":
         Script2();
         break;
-      case "5qqsIjLAeiR":
+      case "5zAiQurcgFi":
         Script3();
         break;
-      case "5dTVHr1eBmy":
+      case "5f1dzMDmSZs":
         Script4();
         break;
-      case "5sc82WZ5dGg":
+      case "6Sz3Xxic9Gu":
         Script5();
         break;
-      case "6jwz34Pu3CT":
+      case "6OEsFVW369g":
         Script6();
         break;
-      case "5r1C63ofD82":
+      case "5uitQveuQdI":
         Script7();
         break;
-      case "6LzJ1Sv1eWq":
+      case "629WOfObvAq":
         Script8();
         break;
-      case "6gY81DAvtqH":
+      case "5jEDr4TswXc":
         Script9();
         break;
-      case "6MY1PHo4qbZ":
+      case "6ZGObCRz1Ri":
         Script10();
         break;
-      case "6EQurHGoWYX":
+      case "5bxysDWWLB5":
         Script11();
         break;
-      case "6S6g0LVTT5H":
+      case "6eg5DB2azUa":
         Script12();
         break;
-      case "5fkgHahgU6v":
+      case "6PomMAf444L":
         Script13();
         break;
-      case "6T0VUFzFyow":
+      case "5dtfFqC7f3z":
         Script14();
         break;
-      case "6f2uMO11LYw":
+      case "632244gEWzj":
         Script15();
         break;
-      case "5jrD7OXL22j":
+      case "6Eo9MTKMyx6":
         Script16();
         break;
-      case "6iLg2WyEJmK":
+      case "5xpXpdotNXT":
         Script17();
         break;
-      case "68Xr3hrFOR6":
+      case "6MIw7e6at1E":
         Script18();
         break;
-      case "6YitkqZWge1":
+      case "6A15GF2kOJ2":
         Script19();
         break;
-      case "6qhrD0xQMyJ":
+      case "6jnM1lxMfCT":
         Script20();
         break;
-      case "5nBkH9L74V7":
+      case "6iVSmejKRRK":
         Script21();
         break;
-      case "64MJDEAZEgy":
+      case "5digk4T64Zk":
         Script22();
         break;
-      case "6FI58XsoQiM":
+      case "6WQFnW3zRxc":
         Script23();
         break;
-      case "6pO5Wquyup9":
+      case "6innz7YxQiF":
         Script24();
         break;
-      case "63cf6Qe0Wlv":
+      case "6XoGIppPSlP":
         Script25();
         break;
-      case "6VwgOPRFIY0":
+      case "5azed0Hle5A":
         Script26();
         break;
-      case "6RW2pUjJ81P":
+      case "6I06MsoXHXu":
         Script27();
         break;
-      case "5rhiUrZk9g2":
+      case "6rjfvcrotbI":
         Script28();
         break;
-      case "5zzrYphWDEy":
+      case "6B7b7VOrDuR":
         Script29();
         break;
-      case "6eArIbGkILo":
+      case "6GWQ63PS1Sf":
         Script30();
         break;
-      case "62JgUwtLidw":
+      case "6RIfaVag1GG":
         Script31();
         break;
-      case "5beKHdm8Ax6":
+      case "5wOieAK6V2n":
         Script32();
         break;
-      case "6KQ7QbVnavE":
+      case "6HrXJRTfOzb":
         Script33();
         break;
-      case "6NmlD3LHm2u":
+      case "64PspPYBjBu":
         Script34();
         break;
-      case "607xOcpuk4o":
+      case "690YMljSulT":
         Script35();
         break;
-      case "5koYU7z8zge":
+      case "5dADXPDp4ok":
         Script36();
         break;
-      case "6hBiRtgVB07":
+      case "6BtHTdPNBPI":
         Script37();
         break;
-      case "6oLjWp7fIw9":
+      case "5q2tKeTdrn4":
         Script38();
         break;
-      case "6RaOE0rVWPf":
+      case "6VEA4Ufb2PH":
         Script39();
         break;
-      case "5c4s8ANkBtH":
+      case "5teANk1W3lD":
         Script40();
         break;
-      case "6DQ8rr8MzIU":
+      case "6qE21rKV8jp":
         Script41();
         break;
   }
@@ -145,6 +145,8 @@ window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D07");
 window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D08");
 window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D09");
 window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D10");
+
+window.getCodigoDiapositiva(cod_actividad, cod_diapositiva);
 
 window.getIntentos(cod_actividad, cod_diapositiva);
 console.log("Inicia actividades");
