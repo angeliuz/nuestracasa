@@ -60,11 +60,15 @@ export const setCodigoDiapositiva = async (cod_actividad, cod_diapositiva) => {
             .then(async () => {
                 console.log("Datos de diapo guardadas")
             });
-        localStorage.setItem("cod_diapositiva", cod_diapositiva);
-        console.log(cod_diapositiva);
+        console.log("Diapositiva creada: ", cod_diapositiva);
     } else {
         console.log("Ya existe el documento")
     }
+}
+
+export const getCodigoDiapositiva = (cod_actividad, cod_diapositiva) => {
+    localStorage.setItem("cod_diapositiva", cod_diapositiva);
+    console.log("Codigo Diapositiva: ", cod_diapositiva);
 }
 
 export const setIntentos = async (cod_actividad, cod_diapositiva) => {
