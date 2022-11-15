@@ -154,6 +154,11 @@ export const getLogro = async (cod_actividad, cod_diapositiva) => {
 
     var logro = docSnap.data().logro;
 
+    let indiceVariable = cod_diapositiva.slice(-2);
+
+    localStorage.setItem(cod_diapositiva + "_logro", logro);
+    window.player.SetVar("logro_" + indiceVariable, Number(localStorage.getItem(cod_diapositiva + "_logro")));
+
     return logro;
 }
 
@@ -179,6 +184,11 @@ export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
     console.log("Respuesta:", docSnap.data().respuesta);
 
     var respuesta = docSnap.data().respuesta;
+
+    let indiceVariable = cod_diapositiva.slice(-2);
+
+    localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
+    window.player.SetVar("respuesta_" + indiceVariable, Number(localStorage.getItem(cod_diapositiva + "_respuesta")));
 
     return respuesta;
 }
