@@ -2,127 +2,127 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5gw1wCbdndW":
+      case "5x7c2H7BZnA":
         Script1();
         break;
-      case "67VDcIWLu88":
+      case "5pNW7EyHnzH":
         Script2();
         break;
-      case "6G7WAr8ULfT":
+      case "5qqsIjLAeiR":
         Script3();
         break;
-      case "6CqtJmPQzyk":
+      case "5dTVHr1eBmy":
         Script4();
         break;
-      case "6F1rXl9jR8T":
+      case "5sc82WZ5dGg":
         Script5();
         break;
-      case "6V5GEsE1LP4":
+      case "6jwz34Pu3CT":
         Script6();
         break;
-      case "6SvO5UNX3bU":
+      case "5r1C63ofD82":
         Script7();
         break;
-      case "6E1LLtflkbo":
+      case "6LzJ1Sv1eWq":
         Script8();
         break;
-      case "68HUUDAsDA2":
+      case "6gY81DAvtqH":
         Script9();
         break;
-      case "6EyAM2IUKuX":
+      case "6MY1PHo4qbZ":
         Script10();
         break;
-      case "5kYB8msLPfh":
+      case "6EQurHGoWYX":
         Script11();
         break;
-      case "6DXDDLJTGEs":
+      case "6S6g0LVTT5H":
         Script12();
         break;
-      case "6EkDHX5fOQp":
+      case "5fkgHahgU6v":
         Script13();
         break;
-      case "65eISojAvmv":
+      case "6T0VUFzFyow":
         Script14();
         break;
-      case "6facQJgjYh5":
+      case "6f2uMO11LYw":
         Script15();
         break;
-      case "6r6f0YcIcCj":
+      case "5jrD7OXL22j":
         Script16();
         break;
-      case "6Qyc7IJBi3k":
+      case "6iLg2WyEJmK":
         Script17();
         break;
-      case "5uPVOehd8In":
+      case "68Xr3hrFOR6":
         Script18();
         break;
-      case "6d7ffkOuIgl":
+      case "6YitkqZWge1":
         Script19();
         break;
-      case "5vsMP0ACm3v":
+      case "6qhrD0xQMyJ":
         Script20();
         break;
-      case "6SV04W0VaEI":
+      case "5nBkH9L74V7":
         Script21();
         break;
-      case "5nWDlZUL1UZ":
+      case "64MJDEAZEgy":
         Script22();
         break;
-      case "6LixpkdAski":
+      case "6FI58XsoQiM":
         Script23();
         break;
-      case "5qaERFWQ1fr":
+      case "6pO5Wquyup9":
         Script24();
         break;
-      case "6px4A1Br8IJ":
+      case "63cf6Qe0Wlv":
         Script25();
         break;
-      case "5yAUousiMOB":
+      case "6VwgOPRFIY0":
         Script26();
         break;
-      case "5XHWTTzgeLz":
+      case "6RW2pUjJ81P":
         Script27();
         break;
-      case "6MukQUcm27b":
+      case "5rhiUrZk9g2":
         Script28();
         break;
-      case "63ZCMSgMWRn":
+      case "5zzrYphWDEy":
         Script29();
         break;
-      case "6dJGABO5UJG":
+      case "6eArIbGkILo":
         Script30();
         break;
-      case "64OljoiYUYg":
+      case "62JgUwtLidw":
         Script31();
         break;
-      case "6kPFo895a72":
+      case "5beKHdm8Ax6":
         Script32();
         break;
-      case "6XQ39Y6oM9z":
+      case "6KQ7QbVnavE":
         Script33();
         break;
-      case "5yUYPD5Bx8L":
+      case "6NmlD3LHm2u":
         Script34();
         break;
-      case "5ezpP1P92Dx":
+      case "607xOcpuk4o":
         Script35();
         break;
-      case "6kTHSBlXf2V":
+      case "5koYU7z8zge":
         Script36();
         break;
-      case "6mP32MxNuBx":
+      case "6hBiRtgVB07":
         Script37();
         break;
-      case "6OIHOejj4Pg":
+      case "6oLjWp7fIw9":
         Script38();
         break;
-      case "6iQdyBgwhLA":
+      case "6RaOE0rVWPf":
         Script39();
         break;
-      case "6rQw1US3XEy":
+      case "5c4s8ANkBtH":
         Script40();
         break;
-      case "6pQQSaCsqOk":
+      case "6DQ8rr8MzIU":
         Script41();
         break;
   }
@@ -134,6 +134,18 @@ function Script1()
 player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
+
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D01");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D02");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D03");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D04");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D05");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D06");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D07");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D08");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D09");
+window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D10");
+
 window.getIntentos(cod_actividad, cod_diapositiva);
 console.log("Inicia actividades");
 }
@@ -185,7 +197,7 @@ function Script5()
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 window.getIntentos(cod_actividad, cod_diapositiva);
-console.log("Inicia actividad diapo 2");
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script6()
@@ -234,19 +246,8 @@ function Script9()
   var p = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var estadoSolucionario = p.GetVar("estadoSolucionario");
-var intentos = p.GetVar("intentos");
-var logro = p.GetVar("logro");
-var pregunta = p.GetVar("pregunta");
-var respuesta = p.GetVar("respuesta");
-
-window.setCodigoDiapositiva(cod_actividad, cod_diapositiva);
-
-p.SetVar("estadoSolucionario","false");
-p.SetVar("intentos","0");
-p.SetVar("logro","0");
-p.SetVar("pregunta","false");
-p.SetVar("respuesta","0");
+window.getIntentos(cod_actividad, cod_diapositiva);
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script10()
@@ -295,19 +296,8 @@ function Script13()
   var p = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var estadoSolucionario = p.GetVar("estadoSolucionario");
-var intentos = p.GetVar("intentos");
-var logro = p.GetVar("logro");
-var pregunta = p.GetVar("pregunta");
-var respuesta = p.GetVar("respuesta");
-
-window.setCodigoDiapositiva(cod_actividad, cod_diapositiva);
-
-p.SetVar("estadoSolucionario","false");
-p.SetVar("intentos","0");
-p.SetVar("logro","0");
-p.SetVar("pregunta","false");
-p.SetVar("respuesta","0");
+window.getIntentos(cod_actividad, cod_diapositiva);
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script14()
@@ -356,19 +346,8 @@ function Script17()
   var p = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var estadoSolucionario = p.GetVar("estadoSolucionario");
-var intentos = p.GetVar("intentos");
-var logro = p.GetVar("logro");
-var pregunta = p.GetVar("pregunta");
-var respuesta = p.GetVar("respuesta");
-
-window.setCodigoDiapositiva(cod_actividad, cod_diapositiva);
-
-p.SetVar("estadoSolucionario","false");
-p.SetVar("intentos","0");
-p.SetVar("logro","0");
-p.SetVar("pregunta","false");
-p.SetVar("respuesta","0");
+window.getIntentos(cod_actividad, cod_diapositiva);
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script18()
@@ -417,19 +396,8 @@ function Script21()
   var p = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var estadoSolucionario = p.GetVar("estadoSolucionario");
-var intentos = p.GetVar("intentos");
-var logro = p.GetVar("logro");
-var pregunta = p.GetVar("pregunta");
-var respuesta = p.GetVar("respuesta");
-
-window.setCodigoDiapositiva(cod_actividad, cod_diapositiva);
-
-p.SetVar("estadoSolucionario","false");
-p.SetVar("intentos","0");
-p.SetVar("logro","0");
-p.SetVar("pregunta","false");
-p.SetVar("respuesta","0");
+window.getIntentos(cod_actividad, cod_diapositiva);
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script22()
@@ -478,19 +446,8 @@ function Script25()
   var p = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var estadoSolucionario = p.GetVar("estadoSolucionario");
-var intentos = p.GetVar("intentos");
-var logro = p.GetVar("logro");
-var pregunta = p.GetVar("pregunta");
-var respuesta = p.GetVar("respuesta");
-
-window.setCodigoDiapositiva(cod_actividad, cod_diapositiva);
-
-p.SetVar("estadoSolucionario","false");
-p.SetVar("intentos","0");
-p.SetVar("logro","0");
-p.SetVar("pregunta","false");
-p.SetVar("respuesta","0");
+window.getIntentos(cod_actividad, cod_diapositiva);
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script26()
@@ -539,19 +496,8 @@ function Script29()
   var p = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var estadoSolucionario = p.GetVar("estadoSolucionario");
-var intentos = p.GetVar("intentos");
-var logro = p.GetVar("logro");
-var pregunta = p.GetVar("pregunta");
-var respuesta = p.GetVar("respuesta");
-
-window.setCodigoDiapositiva(cod_actividad, cod_diapositiva);
-
-p.SetVar("estadoSolucionario","false");
-p.SetVar("intentos","0");
-p.SetVar("logro","0");
-p.SetVar("pregunta","false");
-p.SetVar("respuesta","0");
+window.getIntentos(cod_actividad, cod_diapositiva);
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script30()
@@ -600,19 +546,8 @@ function Script33()
   var p = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var estadoSolucionario = p.GetVar("estadoSolucionario");
-var intentos = p.GetVar("intentos");
-var logro = p.GetVar("logro");
-var pregunta = p.GetVar("pregunta");
-var respuesta = p.GetVar("respuesta");
-
-window.setCodigoDiapositiva(cod_actividad, cod_diapositiva);
-
-p.SetVar("estadoSolucionario","false");
-p.SetVar("intentos","0");
-p.SetVar("logro","0");
-p.SetVar("pregunta","false");
-p.SetVar("respuesta","0");
+window.getIntentos(cod_actividad, cod_diapositiva);
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script34()
@@ -661,19 +596,8 @@ function Script37()
   var p = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var estadoSolucionario = p.GetVar("estadoSolucionario");
-var intentos = p.GetVar("intentos");
-var logro = p.GetVar("logro");
-var pregunta = p.GetVar("pregunta");
-var respuesta = p.GetVar("respuesta");
-
-window.setCodigoDiapositiva(cod_actividad, cod_diapositiva);
-
-p.SetVar("estadoSolucionario","false");
-p.SetVar("intentos","0");
-p.SetVar("logro","0");
-p.SetVar("pregunta","false");
-p.SetVar("respuesta","0");
+window.getIntentos(cod_actividad, cod_diapositiva);
+console.log("Inicia actividad diapo "+ cod_diapositiva);
 }
 
 function Script38()
@@ -723,11 +647,25 @@ function Script41()
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var intento_01 = p.GetVar("intento_01");
+var intento_02 = p.GetVar("intento_02");
+var intento_03 = p.GetVar("intento_03");
+var intento_04 = p.GetVar("intento_04");
+var intento_05 = p.GetVar("intento_05");
+var intento_06 = p.GetVar("intento_06");
+var intento_07 = p.GetVar("intento_07");
+var intento_08 = p.GetVar("intento_08");
+var intento_09 = p.GetVar("intento_09");
+var intento_10 = p.GetVar("intento_10");
 
 var intento_01 = window.getIntentos(cod_actividad, "NC34U5A01D01");
 var intento_02 = window.getIntentos(cod_actividad, "NC34U5A01D02");
-
-console.log(intento_01);
-console.log(intento_02);
+var intento_03 = window.getIntentos(cod_actividad, "NC34U5A01D03");
+var intento_04 = window.getIntentos(cod_actividad, "NC34U5A01D04");
+var intento_05 = window.getIntentos(cod_actividad, "NC34U5A01D05");
+var intento_06 = window.getIntentos(cod_actividad, "NC34U5A01D06");
+var intento_07 = window.getIntentos(cod_actividad, "NC34U5A01D07");
+var intento_08 = window.getIntentos(cod_actividad, "NC34U5A01D08");
+var intento_09 = window.getIntentos(cod_actividad, "NC34U5A01D09");
+var intento_10 = window.getIntentos(cod_actividad, "NC34U5A01D10");
 }
 
