@@ -74,6 +74,7 @@
             </options>
           </option>
           <option name="settings" value="false" />
+          <option name="fullScreenToggle" value="false" />
         </options>
       </optiongroup>
       <optiongroup name="bottombaroptions">
@@ -1291,16 +1292,12 @@
       <links>
         <slidelink slideid="_player.6oTS9TzDJw3" displaytext="Escena sin título" expand="true" type="slide">
           <links>
+            <slidelink slideid="_player.6oTS9TzDJw3.6CGc6Rq9aeE" displaytext="Diapositiva sin título" expand="false" type="slide" />
             <slidelink slideid="_player.6oTS9TzDJw3.61uXTtUvrfR" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.60N7jjUabz4" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.65WqZLVwRAl" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.5zIjXvhMLEV" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.5t8LIcXttmu" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.6rkuwOQAB7c" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.5t9mOXKMoCi" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.5iZyhZ68ueX" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.6DjqBYxUKNU" displaytext="Escoger uno" expand="false" type="slide" />
-            <slidelink slideid="_player.6oTS9TzDJw3.6Cteq6ILgKv" displaytext="Escoger uno" expand="false" type="slide" />
+            <slidelink slideid="_player.6oTS9TzDJw3.6k9cPmGKaA6" displaytext="Escoger uno" expand="false" type="slide" />
+            <slidelink slideid="_player.6oTS9TzDJw3.5Wb4sbUDKog" displaytext="Escoger uno" expand="false" type="slide" />
+            <slidelink slideid="_player.6oTS9TzDJw3.5zyoqROtGZe" displaytext="Escoger uno" expand="false" type="slide" />
+            <slidelink slideid="_player.6oTS9TzDJw3.6DCtorp6CJw" displaytext="Escoger uno" expand="false" type="slide" />
             <slidelink slideid="_player.6oTS9TzDJw3.5VMUb2EbQwR" displaytext="Diapositiva sin título" expand="false" type="slide" />
           </links>
         </slidelink>
