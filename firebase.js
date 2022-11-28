@@ -207,5 +207,5 @@ const getUserIdConecta = () => {
     var str = localStorage.getItem('mm_data');
     var arregloData = new Array();
     arregloData = str.split(",");
-    return arregloData[3];
+    return arregloData[3]
 }
