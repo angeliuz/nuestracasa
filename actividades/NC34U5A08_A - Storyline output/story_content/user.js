@@ -356,40 +356,16 @@ function Script15() {
   p.SetVar("logro_09", localStorage.getItem("NC34U5A01D09_logro"));
   p.SetVar("logro_10", localStorage.getItem("NC34U5A01D10_logro"));
 
-
-  var logro_01 = p.GetVar("logro_01");
-  var logro_02 = p.GetVar("logro_02");
-  var logro_03 = p.GetVar("logro_03");
-  var logro_04 = p.GetVar("logro_04");
-  var logro_05 = p.GetVar("logro_05");
-  var logro_06 = p.GetVar("logro_06");
-  var logro_07 = p.GetVar("logro_07");
-  var logro_08 = p.GetVar("logro_08");
-  var logro_09 = p.GetVar("logro_09");
-  var logro_10 = p.GetVar("logro_10");
-
-
-  var intento_01 = p.GetVar("intento_01");
-  var intento_02 = p.GetVar("intento_02");
-  var intento_03 = p.GetVar("intento_03");
-  var intento_04 = p.GetVar("intento_04");
-  var intento_05 = p.GetVar("intento_05");
-  var intento_06 = p.GetVar("intento_06");
-  var intento_07 = p.GetVar("intento_07");
-  var intento_08 = p.GetVar("intento_08");
-  var intento_09 = p.GetVar("intento_09");
-  var intento_10 = p.GetVar("intento_10");
-
-  var intento_01 = window.getIntentos(cod_actividad, "NC34U5A01D01");
-  var intento_02 = window.getIntentos(cod_actividad, "NC34U5A01D02");
-  var intento_03 = window.getIntentos(cod_actividad, "NC34U5A01D03");
-  var intento_04 = window.getIntentos(cod_actividad, "NC34U5A01D04");
-  var intento_05 = window.getIntentos(cod_actividad, "NC34U5A01D05");
-  var intento_06 = window.getIntentos(cod_actividad, "NC34U5A01D06");
-  var intento_07 = window.getIntentos(cod_actividad, "NC34U5A01D07");
-  var intento_08 = window.getIntentos(cod_actividad, "NC34U5A01D08");
-  var intento_09 = window.getIntentos(cod_actividad, "NC34U5A01D09");
-  var intento_10 = window.getIntentos(cod_actividad, "NC34U5A01D10");
+  p.SetVar("intento_01", localStorage.getItem("NC34U5A01D01_intentos"));
+  p.SetVar("intento_02", localStorage.getItem("NC34U5A01D02_intentos"));
+  p.SetVar("intento_03", localStorage.getItem("NC34U5A01D03_intentos"));
+  p.SetVar("intento_04", localStorage.getItem("NC34U5A01D04_intentos"));
+  p.SetVar("intento_05", localStorage.getItem("NC34U5A01D05_intentos"));
+  p.SetVar("intento_06", localStorage.getItem("NC34U5A01D06_intentos"));
+  p.SetVar("intento_07", localStorage.getItem("NC34U5A01D07_intentos"));
+  p.SetVar("intento_08", localStorage.getItem("NC34U5A01D08_intentos"));
+  p.SetVar("intento_09", localStorage.getItem("NC34U5A01D09_intentos"));
+  p.SetVar("intento_10", localStorage.getItem("NC34U5A01D10_intentos"));
 
   var solucion_01 = p.GetVar("solucion_01");
   var solucion_02 = p.GetVar("solucion_02");
