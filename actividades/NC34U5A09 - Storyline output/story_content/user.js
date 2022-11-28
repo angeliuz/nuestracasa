@@ -2,49 +2,49 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6nN1SlphcCx":
+      case "6UOQJUDBDn8":
         Script1();
         break;
-      case "6DQWYWbJhL9":
+      case "6I6WY67HBJ6":
         Script2();
         break;
-      case "6U6Rgqquz7d":
+      case "5mDILowWyAh":
         Script3();
         break;
-      case "6MEehlyQ6OO":
+      case "5xF4aNW9hwn":
         Script4();
         break;
-      case "64u2Fd0X6hp":
+      case "6FVaZUFilKo":
         Script5();
         break;
-      case "5rodI5IJ40c":
+      case "5cC1Mcsqg5D":
         Script6();
         break;
-      case "60ecfEIVXTO":
+      case "688AaXFaDZe":
         Script7();
         break;
-      case "62g4nstNiUq":
+      case "5aDVKDqhBUi":
         Script8();
         break;
-      case "6bivoCtcAsL":
+      case "6FwEReeePll":
         Script9();
         break;
-      case "5oX6pUOSwzZ":
+      case "6EulMVMLivl":
         Script10();
         break;
-      case "6TxqskbGzx5":
+      case "6Qa5SUXnUh6":
         Script11();
         break;
-      case "61mEJyw4MOG":
+      case "6lGb9mMet6f":
         Script12();
         break;
-      case "6GCFowqshsW":
+      case "5mTeS0orVAB":
         Script13();
         break;
-      case "6eVmr5Lxv06":
+      case "6gwzeEuBNqx":
         Script14();
         break;
-      case "612pb1PB4Ka":
+      case "6TKGYggg8z6":
         Script15();
         break;
   }
@@ -77,32 +77,65 @@ console.log("Inicializa actividades en BD");
 function Script2()
 {
   var p = GetPlayer();
-var cod_actividad = p.GetVar("cod_actividad");
-var cod_diapositiva = p.GetVar("cod_diapositiva");
+  var cod_actividad = p.GetVar("cod_actividad");
+  var cod_diapositiva = p.GetVar("cod_diapositiva");
 
-//var respuesta_01 = p.GetVar("respuesta_01");
-//var respuesta_02 = p.GetVar("respuesta_02");
-//var respuesta_03 = p.GetVar("respuesta_03");
-//var respuesta_04 = p.GetVar("respuesta_04");
-//var respuesta_05 = p.GetVar("respuesta_05");
-//var respuesta_06 = p.GetVar("respuesta_06");
-//var respuesta_07 = p.GetVar("respuesta_07");
-//var respuesta_08 = p.GetVar("respuesta_08");
-//var respuesta_09 = p.GetVar("respuesta_09");
-//var respuesta_10 = p.GetVar("respuesta_10");
+  //var respuesta_01 = p.GetVar("respuesta_01");
+  //var respuesta_02 = p.GetVar("respuesta_02");
+  //var respuesta_03 = p.GetVar("respuesta_03");
+  //var respuesta_04 = p.GetVar("respuesta_04");
+  //var respuesta_05 = p.GetVar("respuesta_05");
+  //var respuesta_06 = p.GetVar("respuesta_06");
+  //var respuesta_07 = p.GetVar("respuesta_07");
+  //var respuesta_08 = p.GetVar("respuesta_08");
+  //var respuesta_09 = p.GetVar("respuesta_09");
+  //var respuesta_10 = p.GetVar("respuesta_10");
 
-var respuesta_01 = window.getRespuesta(cod_actividad, "NC34U5A01D01");
-var respuesta_02 = window.getRespuesta(cod_actividad, "NC34U5A01D02");
-var respuesta_03 = window.getRespuesta(cod_actividad, "NC34U5A01D03");
-var respuesta_04 = window.getRespuesta(cod_actividad, "NC34U5A01D04");
-var respuesta_05 = window.getRespuesta(cod_actividad, "NC34U5A01D05");
-var respuesta_06 = window.getRespuesta(cod_actividad, "NC34U5A01D06");
-var respuesta_07 = window.getRespuesta(cod_actividad, "NC34U5A01D07");
-var respuesta_08 = window.getRespuesta(cod_actividad, "NC34U5A01D08");
-var respuesta_09 = window.getRespuesta(cod_actividad, "NC34U5A01D09");
-var respuesta_10 = window.getRespuesta(cod_actividad, "NC34U5A01D10");
+  var respuesta_01 = window.getRespuesta(cod_actividad, "NC34U5A01D01");
+  var respuesta_02 = window.getRespuesta(cod_actividad, "NC34U5A01D02");
+  var respuesta_03 = window.getRespuesta(cod_actividad, "NC34U5A01D03");
+  var respuesta_04 = window.getRespuesta(cod_actividad, "NC34U5A01D04");
+  var respuesta_05 = window.getRespuesta(cod_actividad, "NC34U5A01D05");
+  var respuesta_06 = window.getRespuesta(cod_actividad, "NC34U5A01D06");
+  var respuesta_07 = window.getRespuesta(cod_actividad, "NC34U5A01D07");
+  var respuesta_08 = window.getRespuesta(cod_actividad, "NC34U5A01D08");
+  var respuesta_09 = window.getRespuesta(cod_actividad, "NC34U5A01D09");
+  var respuesta_10 = window.getRespuesta(cod_actividad, "NC34U5A01D10");
 
-console.log("trae respuesta guardadas en BD");
+  var solucion_01 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D01");
+  var solucion_02 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D02");
+  var solucion_03 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D03");
+  var solucion_04 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D04");
+  var solucion_05 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D05");
+  var solucion_06 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D06");
+  var solucion_07 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D07");
+  var solucion_08 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D08");
+  var solucion_09 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D09");
+  var solucion_10 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D10");
+
+  var intento_01 = window.getIntentos(cod_actividad, "NC34U5A01D01");
+  var intento_02 = window.getIntentos(cod_actividad, "NC34U5A01D02");
+  var intento_03 = window.getIntentos(cod_actividad, "NC34U5A01D03");
+  var intento_04 = window.getIntentos(cod_actividad, "NC34U5A01D04");
+  var intento_05 = window.getIntentos(cod_actividad, "NC34U5A01D05");
+  var intento_06 = window.getIntentos(cod_actividad, "NC34U5A01D06");
+  var intento_07 = window.getIntentos(cod_actividad, "NC34U5A01D07");
+  var intento_08 = window.getIntentos(cod_actividad, "NC34U5A01D08");
+  var intento_09 = window.getIntentos(cod_actividad, "NC34U5A01D09");
+  var intento_10 = window.getIntentos(cod_actividad, "NC34U5A01D10");
+
+  var logro_01 = window.getLogro(cod_actividad, "NC34U5A01D01");
+  var logro_02 = window.getLogro(cod_actividad, "NC34U5A01D02");
+  var logro_03 = window.getLogro(cod_actividad, "NC34U5A01D03");
+  var logro_04 = window.getLogro(cod_actividad, "NC34U5A01D04");
+  var logro_05 = window.getLogro(cod_actividad, "NC34U5A01D05");
+  var logro_06 = window.getLogro(cod_actividad, "NC34U5A01D06");
+  var logro_07 = window.getLogro(cod_actividad, "NC34U5A01D07");
+  var logro_08 = window.getLogro(cod_actividad, "NC34U5A01D08");
+  var logro_09 = window.getLogro(cod_actividad, "NC34U5A01D09");
+  var logro_10 = window.getLogro(cod_actividad, "NC34U5A01D10");
+
+  console.log("trae respuesta guardadas en BD");
 }
 
 function Script3()
