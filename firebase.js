@@ -170,7 +170,10 @@ export const getLogro = async (cod_actividad, cod_diapositiva) => {
 }
 
 export const setRespuesta = async (cod_actividad, cod_diapositiva, respuesta) => {
+    let indiceVariable = cod_diapositiva.slice(-2);
     localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
+    window.player.SetVar("respuesta_" + indiceVariable, Number(localStorage.getItem(cod_diapositiva + "_respuesta")));
+
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
 
@@ -189,7 +192,7 @@ export const setRespuesta = async (cod_actividad, cod_diapositiva, respuesta) =>
 export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
-    
+
     var respuesta = docSnap.data().respuesta;
 
     let indiceVariable = cod_diapositiva.slice(-2);
