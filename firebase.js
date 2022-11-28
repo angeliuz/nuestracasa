@@ -105,7 +105,7 @@ export const getIntentos = async (cod_actividad, cod_diapositiva) => {
 
 
 export const setEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
-    localStorage.setItem(cod_diapositiva + "_solucion", true);
+    localStorage.setItem(cod_diapositiva + "_solucion", "true");
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
 
@@ -134,7 +134,7 @@ export const getEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
     //localStorage.setItem(cod_diapositiva + "_logro", logro);
     window.player.SetVar("solucion_" + indiceVariable, Boolean(localStorage.getItem(cod_diapositiva + "_solucion")));
 
-    localStorage.setItem(cod_diapositiva + "_solucion", solucion);
+    localStorage.setItem(cod_diapositiva + "_solucion", solucion == undefined ? "false" : "true");
 
     return solucion;
 }
