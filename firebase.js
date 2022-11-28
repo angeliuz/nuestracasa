@@ -89,13 +89,17 @@ export const setIntentos = async (cod_actividad, cod_diapositiva) => {
 
 
 export const getIntentos = async (cod_actividad, cod_diapositiva) => {
+    let indiceVariable = cod_diapositiva.slice(-2);
+
     const docRef = doc(db, "actividades", getUserIdConecta());
-    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
+    var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva)).then(async () => {
+        console.log("Loaded intentos", docSnap.data().intentos);
+        localStorage.setItem(cod_diapositiva + "_intentos", docSnap.data().intentos);
+    })
     console.log(">Intentos:", docSnap.data().intentos);
 
     var intentos = docSnap.data().intentos;
 
-    let indiceVariable = cod_diapositiva.slice(-2);
 
     localStorage.setItem(cod_diapositiva + "_intentos", intentos);
     window.player.SetVar("intento_" + indiceVariable, Number(localStorage.getItem(cod_diapositiva + "_intentos")));

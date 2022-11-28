@@ -98,6 +98,39 @@ function Script2() {
   var respuesta_09 = window.getRespuesta(cod_actividad, "NC34U5A01D09");
   var respuesta_10 = window.getRespuesta(cod_actividad, "NC34U5A01D10");
 
+  var solucion_01 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D01");
+  var solucion_02 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D02");
+  var solucion_03 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D03");
+  var solucion_04 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D04");
+  var solucion_05 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D05");
+  var solucion_06 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D06");
+  var solucion_07 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D07");
+  var solucion_08 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D08");
+  var solucion_09 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D09");
+  var solucion_10 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D10");
+
+  var intento_01 = window.getIntentos(cod_actividad, "NC34U5A01D01");
+  var intento_02 = window.getIntentos(cod_actividad, "NC34U5A01D02");
+  var intento_03 = window.getIntentos(cod_actividad, "NC34U5A01D03");
+  var intento_04 = window.getIntentos(cod_actividad, "NC34U5A01D04");
+  var intento_05 = window.getIntentos(cod_actividad, "NC34U5A01D05");
+  var intento_06 = window.getIntentos(cod_actividad, "NC34U5A01D06");
+  var intento_07 = window.getIntentos(cod_actividad, "NC34U5A01D07");
+  var intento_08 = window.getIntentos(cod_actividad, "NC34U5A01D08");
+  var intento_09 = window.getIntentos(cod_actividad, "NC34U5A01D09");
+  var intento_10 = window.getIntentos(cod_actividad, "NC34U5A01D10");
+
+  var logro_01 = window.getLogro(cod_actividad, "NC34U5A01D01");
+  var logro_02 = window.getLogro(cod_actividad, "NC34U5A01D02");
+  var logro_03 = window.getLogro(cod_actividad, "NC34U5A01D03");
+  var logro_04 = window.getLogro(cod_actividad, "NC34U5A01D04");
+  var logro_05 = window.getLogro(cod_actividad, "NC34U5A01D05");
+  var logro_06 = window.getLogro(cod_actividad, "NC34U5A01D06");
+  var logro_07 = window.getLogro(cod_actividad, "NC34U5A01D07");
+  var logro_08 = window.getLogro(cod_actividad, "NC34U5A01D08");
+  var logro_09 = window.getLogro(cod_actividad, "NC34U5A01D09");
+  var logro_10 = window.getLogro(cod_actividad, "NC34U5A01D10");
+
   console.log("trae respuesta guardadas en BD");
 }
 
