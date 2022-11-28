@@ -134,12 +134,14 @@ function Script4() {
     window.setIntentos(cod_actividad, cod_diapositiva);
     window.setLogro(cod_actividad, cod_diapositiva, logro);
     window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+    window.getEstadoSolucionario(cod_actividad, cod_diapositiva);
     //respuesta = respuesta_01;
     //p.SetVar("respuesta_01",respuesta);
   } else {
     console.log("es igual");
     window.setLogro(cod_actividad, cod_diapositiva, logro);
     window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+    window.getEstadoSolucionario(cod_actividad, cod_diapositiva);
     //p.SetVar("respuesta",respuesta_diapo);
     //respuesta = respuesta_01;
     //p.SetVar("respuesta_01",respuesta);
@@ -191,12 +193,14 @@ function Script7() {
     window.setIntentos(cod_actividad, cod_diapositiva);
     window.setLogro(cod_actividad, cod_diapositiva, logro);
     window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+    window.getEstadoSolucionario(cod_actividad, cod_diapositiva);
     //respuesta = respuesta_01;
     //p.SetVar("respuesta_01",respuesta);
   } else {
     console.log("es igual");
     window.setLogro(cod_actividad, cod_diapositiva, logro);
     window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+    window.getEstadoSolucionario(cod_actividad, cod_diapositiva);
     //p.SetVar("respuesta",respuesta_diapo);
     //respuesta = respuesta_01;
     //p.SetVar("respuesta_01",respuesta);
@@ -248,12 +252,14 @@ function Script10() {
     window.setIntentos(cod_actividad, cod_diapositiva);
     window.setLogro(cod_actividad, cod_diapositiva, logro);
     window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+    window.getEstadoSolucionario(cod_actividad, cod_diapositiva);
     //respuesta = respuesta_01;
     //p.SetVar("respuesta_01",respuesta);
   } else {
     console.log("es igual");
     window.setLogro(cod_actividad, cod_diapositiva, logro);
     window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+    window.getEstadoSolucionario(cod_actividad, cod_diapositiva);
     //p.SetVar("respuesta",respuesta_diapo);
     //respuesta = respuesta_01;
     //p.SetVar("respuesta_01",respuesta);
@@ -305,12 +311,14 @@ function Script13() {
     window.setIntentos(cod_actividad, cod_diapositiva);
     window.setLogro(cod_actividad, cod_diapositiva, logro);
     window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+    window.getEstadoSolucionario(cod_actividad, cod_diapositiva);
     //respuesta = respuesta_01;
     //p.SetVar("respuesta_01",respuesta);
   } else {
     console.log("es igual");
     window.setLogro(cod_actividad, cod_diapositiva, logro);
     window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+    window.getEstadoSolucionario(cod_actividad, cod_diapositiva);
     //p.SetVar("respuesta",respuesta_diapo);
     //respuesta = respuesta_01;
     //p.SetVar("respuesta_01",respuesta);
@@ -367,27 +375,17 @@ function Script15() {
   p.SetVar("intento_09", localStorage.getItem("NC34U5A01D09_intentos"));
   p.SetVar("intento_10", localStorage.getItem("NC34U5A01D10_intentos"));
 
-  var solucion_01 = p.GetVar("solucion_01");
-  var solucion_02 = p.GetVar("solucion_02");
-  var solucion_03 = p.GetVar("solucion_03");
-  var solucion_04 = p.GetVar("solucion_04");
-  var solucion_05 = p.GetVar("solucion_05");
-  var solucion_06 = p.GetVar("solucion_06");
-  var solucion_07 = p.GetVar("solucion_07");
-  var solucion_08 = p.GetVar("solucion_08");
-  var solucion_09 = p.GetVar("solucion_09");
-  var solucion_10 = p.GetVar("solucion_10");
+  p.SetVar("solucion_01", localStorage.getItem("NC34U5A01D01_solucion"));
+  p.SetVar("solucion_02", localStorage.getItem("NC34U5A01D02_solucion"));
+  p.SetVar("solucion_03", localStorage.getItem("NC34U5A01D03_solucion"));
+  p.SetVar("solucion_04", localStorage.getItem("NC34U5A01D04_solucion"));
+  p.SetVar("solucion_05", localStorage.getItem("NC34U5A01D05_solucion"));
+  p.SetVar("solucion_06", localStorage.getItem("NC34U5A01D06_solucion"));
+  p.SetVar("solucion_07", localStorage.getItem("NC34U5A01D07_solucion"));
+  p.SetVar("solucion_08", localStorage.getItem("NC34U5A01D08_solucion"));
+  p.SetVar("solucion_09", localStorage.getItem("NC34U5A01D09_solucion"));
+  p.SetVar("solucion_10", localStorage.getItem("NC34U5A01D10_solucion"));
 
-  var solucion_01 = window.getEstadoSolucionario(cod_actividad, cod_actividad + "D01");
-  var solucion_02 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D02");
-  var solucion_03 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D03");
-  var solucion_04 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D04");
-  var solucion_05 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D05");
-  var solucion_06 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D06");
-  var solucion_07 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D07");
-  var solucion_08 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D08");
-  var solucion_09 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D09");
-  var solucion_10 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D10");
 
   var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls);
   var totalPorcentajes = 400;
