@@ -105,6 +105,7 @@ export const getIntentos = async (cod_actividad, cod_diapositiva) => {
 
 
 export const setEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
+    localStorage.setItem(cod_diapositiva + "_solucion", true);
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
 
@@ -125,13 +126,19 @@ export const getEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
     console.log("Document data:", docSnap.data().solucion);
 
-    var intentos = docSnap.data().solucion;
+    var solucion = docSnap.data().solucion;
 
-    return intentos;
+    let indiceVariable = cod_diapositiva.slice(-2);
+
+    //localStorage.setItem(cod_diapositiva + "_logro", logro);
+    window.player.SetVar("solucion_" + indiceVariable, Boolean(localStorage.getItem(cod_diapositiva + "_solucion")));
+
+    return solucion;
 }
 
 
 export const setLogro = async (cod_actividad, cod_diapositiva, logro) => {
+    localStorage.setItem(cod_diapositiva + "_logro", logro);
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
 
@@ -156,13 +163,14 @@ export const getLogro = async (cod_actividad, cod_diapositiva) => {
 
     let indiceVariable = cod_diapositiva.slice(-2);
 
-    localStorage.setItem(cod_diapositiva + "_logro", logro);
+    //localStorage.setItem(cod_diapositiva + "_logro", logro);
     window.player.SetVar("logro_" + indiceVariable, Number(localStorage.getItem(cod_diapositiva + "_logro")));
 
     return logro;
 }
 
 export const setRespuesta = async (cod_actividad, cod_diapositiva, respuesta) => {
+    localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
 
