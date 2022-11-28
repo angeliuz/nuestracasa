@@ -122,6 +122,7 @@ export const setEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
 }
 
 export const getEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
+
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
     console.log("Document data:", docSnap.data().solucion);
@@ -132,6 +133,8 @@ export const getEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
 
     //localStorage.setItem(cod_diapositiva + "_logro", logro);
     window.player.SetVar("solucion_" + indiceVariable, Boolean(localStorage.getItem(cod_diapositiva + "_solucion")));
+
+    localStorage.setItem(cod_diapositiva + "_solucion", solucion);
 
     return solucion;
 }
