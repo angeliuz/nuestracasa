@@ -205,16 +205,21 @@ export const setRespuesta = async (cod_actividad, cod_diapositiva, respuesta) =>
 export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
     const docRef = doc(db, "actividades", getUserIdConecta());
     await getDoc(doc(docRef, cod_actividad, cod_diapositiva)).then(doc => {
-        var respuesta = doc.data().respuesta;
+        if (!doc.data().respuesta) {
+            return
+        } else {
 
-        let indiceVariable = cod_diapositiva.slice(-2);
+            var respuesta = doc.data().respuesta;
 
-        localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
-        window.player.SetVar("respuesta_" + indiceVariable, Number(localStorage.getItem(cod_diapositiva + "_respuesta")));
+            let indiceVariable = cod_diapositiva.slice(-2);
 
-        console.log("Get Respuesta:", doc.data().respuesta);
+            localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
+            window.player.SetVar("respuesta_" + indiceVariable, Number(localStorage.getItem(cod_diapositiva + "_respuesta")));
 
-        return respuesta;
+            console.log("Get Respuesta:", doc.data().respuesta);
+
+            return respuesta;
+        }
     })
 
 }
