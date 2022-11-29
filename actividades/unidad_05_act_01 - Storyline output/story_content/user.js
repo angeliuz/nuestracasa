@@ -101,6 +101,7 @@ console.log("Inicializa actividades en BD");
 function Script2()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -165,6 +166,7 @@ console.log("trae respuesta guardadas en BD");
 function Script3()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -191,6 +193,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script4()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -202,6 +205,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script5()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -228,6 +232,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script6()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -239,6 +244,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script7()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -265,6 +271,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script8()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -276,6 +283,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script9()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -302,6 +310,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script10()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -313,6 +322,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script11()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -339,6 +349,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script12()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -350,6 +361,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script13()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -376,6 +388,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script14()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -387,6 +400,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script15()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -413,6 +427,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script16()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -424,6 +439,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script17()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -450,6 +466,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script18()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -461,6 +478,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script19()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -487,6 +505,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script20()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -498,6 +517,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script21()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -524,6 +544,7 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script22()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -535,6 +556,7 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script23()
 {
   var p = GetPlayer();
+  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
