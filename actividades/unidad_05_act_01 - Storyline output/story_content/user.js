@@ -2,73 +2,73 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5a7O2FqwRwA":
+      case "5gq5yfv0K9t":
         Script1();
         break;
-      case "6YDs0us5eGL":
+      case "63JBB5CdAjr":
         Script2();
         break;
-      case "6aYGZ0CZZQ8":
+      case "61sELFy3OJ4":
         Script3();
         break;
-      case "5qziLY5HQok":
+      case "6Aa5I23eSMy":
         Script4();
         break;
-      case "65XwKjNRBfk":
+      case "6bs988nVik5":
         Script5();
         break;
-      case "6ow9GvGttwM":
+      case "6F26RYBlR5M":
         Script6();
         break;
-      case "6ii5Npw96EW":
+      case "5xRRVCe3fhu":
         Script7();
         break;
-      case "5wmB4HxtbON":
+      case "63p9D7Uulg0":
         Script8();
         break;
-      case "6CecyLq8tYx":
+      case "6NVaeeqGxum":
         Script9();
         break;
-      case "5aP5AV5LfeR":
+      case "5WHlGk9xEAz":
         Script10();
         break;
-      case "5ZDkZSaN54h":
+      case "6MmXcHx94G0":
         Script11();
         break;
-      case "6gOCGlh5l37":
+      case "6ebslnrNXfL":
         Script12();
         break;
-      case "5woXBqCESEM":
+      case "63WEG1RIOMu":
         Script13();
         break;
-      case "6H8ERpCQtig":
+      case "6oUZmlqr0Nd":
         Script14();
         break;
-      case "68djFxyAHeM":
+      case "6KhWVOzEJRI":
         Script15();
         break;
-      case "5h0o5bNaFWD":
+      case "69yMlCs9MuJ":
         Script16();
         break;
-      case "5W5aGOSdIfC":
+      case "5tYOpf0tmQB":
         Script17();
         break;
-      case "5b17GZEzX7T":
+      case "6cXV807lqzE":
         Script18();
         break;
-      case "5iDiUqwWlkW":
+      case "66fy3nmHSCH":
         Script19();
         break;
-      case "5YzJPunvmU1":
+      case "5uGBJ9agyiV":
         Script20();
         break;
-      case "5yyDGI7Pvkj":
+      case "62tVum9QZtG":
         Script21();
         break;
-      case "6NFqmO6BBpR":
+      case "6aNDboFnF8o":
         Script22();
         break;
-      case "5f1V0Zu3CtL":
+      case "5zY3hUJaBKl":
         Script23();
         break;
   }
@@ -538,51 +538,60 @@ function Script23()
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
-var respuesta_01 = window.getRespuesta(cod_actividad, "NC34U5A01D01");
-var respuesta_02 = window.getRespuesta(cod_actividad, "NC34U5A01D02");
-var respuesta_03 = window.getRespuesta(cod_actividad, "NC34U5A01D03");
-var respuesta_04 = window.getRespuesta(cod_actividad, "NC34U5A01D04");
-var respuesta_05 = window.getRespuesta(cod_actividad, "NC34U5A01D05");
-var respuesta_06 = window.getRespuesta(cod_actividad, "NC34U5A01D06");
-var respuesta_07 = window.getRespuesta(cod_actividad, "NC34U5A01D07");
-var respuesta_08 = window.getRespuesta(cod_actividad, "NC34U5A01D08");
-var respuesta_09 = window.getRespuesta(cod_actividad, "NC34U5A01D09");
-var respuesta_10 = window.getRespuesta(cod_actividad, "NC34U5A01D10");
+var logro_01_ls = Number(localStorage.getItem(cod_actividad + "D01_logro"));
+var logro_02_ls = Number(localStorage.getItem(cod_actividad + "D02_logro"));
+var logro_03_ls = Number(localStorage.getItem(cod_actividad + "D03_logro"));
+var logro_04_ls = Number(localStorage.getItem(cod_actividad + "D04_logro"));
+var logro_05_ls = Number(localStorage.getItem(cod_actividad + "D05_logro"));
+var logro_06_ls = Number(localStorage.getItem(cod_actividad + "D06_logro"));
+var logro_07_ls = Number(localStorage.getItem(cod_actividad + "D07_logro"));
+var logro_08_ls = Number(localStorage.getItem(cod_actividad + "D08_logro"));
+var logro_09_ls = Number(localStorage.getItem(cod_actividad + "D09_logro"));
+var logro_10_ls = Number(localStorage.getItem(cod_actividad + "D10_logro"));
 
-var solucion_01 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D01");
-var solucion_02 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D02");
-var solucion_03 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D03");
-var solucion_04 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D04");
-var solucion_05 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D05");
-var solucion_06 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D06");
-var solucion_07 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D07");
-var solucion_08 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D08");
-var solucion_09 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D09");
-var solucion_10 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D10");
+p.SetVar("logro_01", localStorage.getItem("NC34U5A01D01_logro"));
+p.SetVar("logro_02", localStorage.getItem("NC34U5A01D02_logro"));
+p.SetVar("logro_03", localStorage.getItem("NC34U5A01D03_logro"));
+p.SetVar("logro_04", localStorage.getItem("NC34U5A01D04_logro"));
+p.SetVar("logro_05", localStorage.getItem("NC34U5A01D05_logro"));
+p.SetVar("logro_06", localStorage.getItem("NC34U5A01D06_logro"));
+p.SetVar("logro_07", localStorage.getItem("NC34U5A01D07_logro"));
+p.SetVar("logro_08", localStorage.getItem("NC34U5A01D08_logro"));
+p.SetVar("logro_09", localStorage.getItem("NC34U5A01D09_logro"));
+p.SetVar("logro_10", localStorage.getItem("NC34U5A01D10_logro"));
 
-var intento_01 = window.getIntentos(cod_actividad, "NC34U5A01D01");
-var intento_02 = window.getIntentos(cod_actividad, "NC34U5A01D02");
-var intento_03 = window.getIntentos(cod_actividad, "NC34U5A01D03");
-var intento_04 = window.getIntentos(cod_actividad, "NC34U5A01D04");
-var intento_05 = window.getIntentos(cod_actividad, "NC34U5A01D05");
-var intento_06 = window.getIntentos(cod_actividad, "NC34U5A01D06");
-var intento_07 = window.getIntentos(cod_actividad, "NC34U5A01D07");
-var intento_08 = window.getIntentos(cod_actividad, "NC34U5A01D08");
-var intento_09 = window.getIntentos(cod_actividad, "NC34U5A01D09");
-var intento_10 = window.getIntentos(cod_actividad, "NC34U5A01D10");
+window.getIntentos(cod_actividad, "NC34U5A01D01");
+window.getIntentos(cod_actividad, "NC34U5A01D02");
+window.getIntentos(cod_actividad, "NC34U5A01D03");
+window.getIntentos(cod_actividad, "NC34U5A01D04");
+window.getIntentos(cod_actividad, "NC34U5A01D05");
+window.getIntentos(cod_actividad, "NC34U5A01D06");
+window.getIntentos(cod_actividad, "NC34U5A01D07");
+window.getIntentos(cod_actividad, "NC34U5A01D08");
+window.getIntentos(cod_actividad, "NC34U5A01D09");
+window.getIntentos(cod_actividad, "NC34U5A01D10");
 
-var logro_01_ls = window.getLogro(cod_actividad, "NC34U5A01D01");
-var logro_02_ls = window.getLogro(cod_actividad, "NC34U5A01D02");
-var logro_03_ls = window.getLogro(cod_actividad, "NC34U5A01D03");
-var logro_04_ls = window.getLogro(cod_actividad, "NC34U5A01D04");
-var logro_05_ls = window.getLogro(cod_actividad, "NC34U5A01D05");
-var logro_06_ls = window.getLogro(cod_actividad, "NC34U5A01D06");
-var logro_07_ls = window.getLogro(cod_actividad, "NC34U5A01D07");
-var logro_08_ls = window.getLogro(cod_actividad, "NC34U5A01D08");
-var logro_09_ls = window.getLogro(cod_actividad, "NC34U5A01D09");
-var logro_10_ls = window.getLogro(cod_actividad, "NC34U5A01D10");
+p.SetVar("intento_01", Number(localStorage.getItem("NC34U5A01D01_intentos")));
+p.SetVar("intento_02", Number(localStorage.getItem("NC34U5A01D02_intentos")));
+p.SetVar("intento_03", Number(localStorage.getItem("NC34U5A01D03_intentos")));
+p.SetVar("intento_04", Number(localStorage.getItem("NC34U5A01D04_intentos")));
+p.SetVar("intento_05", Number(localStorage.getItem("NC34U5A01D05_intentos")));
+p.SetVar("intento_06", Number(localStorage.getItem("NC34U5A01D06_intentos")));
+p.SetVar("intento_07", Number(localStorage.getItem("NC34U5A01D07_intentos")));
+p.SetVar("intento_08", Number(localStorage.getItem("NC34U5A01D08_intentos")));
+p.SetVar("intento_09", Number(localStorage.getItem("NC34U5A01D09_intentos")));
+p.SetVar("intento_10", Number(localStorage.getItem("NC34U5A01D10_intentos")));
 
-console.log("trae respuesta guardadas en BD");
+p.SetVar("solucion_01", Boolean(localStorage.getItem("NC34U5A01D01_solucion")));
+p.SetVar("solucion_02", Boolean(localStorage.getItem("NC34U5A01D02_solucion")));
+p.SetVar("solucion_03", Boolean(localStorage.getItem("NC34U5A01D03_solucion")));
+p.SetVar("solucion_04", Boolean(localStorage.getItem("NC34U5A01D04_solucion")));
+p.SetVar("solucion_05", Boolean(localStorage.getItem("NC34U5A01D05_solucion")));
+p.SetVar("solucion_06", Boolean(localStorage.getItem("NC34U5A01D06_solucion")));
+p.SetVar("solucion_07", Boolean(localStorage.getItem("NC34U5A01D07_solucion")));
+p.SetVar("solucion_08", Boolean(localStorage.getItem("NC34U5A01D08_solucion")));
+p.SetVar("solucion_09", Boolean(localStorage.getItem("NC34U5A01D09_solucion")));
+p.SetVar("solucion_10", Boolean(localStorage.getItem("NC34U5A01D10_solucion")));
 
 var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls) + Number(logro_05_ls) + Number(logro_06_ls) + Number(logro_07_ls) + Number(logro_08_ls) + Number(logro_09_ls) + Number(logro_10_ls);
 var totalPorcentajes = 1000;
