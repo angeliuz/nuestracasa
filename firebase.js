@@ -219,17 +219,32 @@ export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
 
 }
 
-export const getTotal = async (cod_actividad, cod_diapositiva) => {
-    const docRef = doc(db, "actividades", getUserIdConecta());
-    await getDoc(doc(docRef, cod_actividad, cod_diapositiva)).then(doc => {
-        console.log("Logro:", doc.data().logro);
+export const getTotal = async (cod_actividad) => {
 
-        var logro = doc.data().logro;
+    var logro_01_ls = Number(localStorage.getItem(cod_actividad + "D01_logro"));
+    var logro_02_ls = Number(localStorage.getItem(cod_actividad + "D02_logro"));
+    var logro_03_ls = Number(localStorage.getItem(cod_actividad + "D03_logro"));
+    var logro_04_ls = Number(localStorage.getItem(cod_actividad + "D04_logro"));
+    var logro_05_ls = Number(localStorage.getItem(cod_actividad + "D05_logro"));
+    var logro_06_ls = Number(localStorage.getItem(cod_actividad + "D06_logro"));
+    var logro_07_ls = Number(localStorage.getItem(cod_actividad + "D07_logro"));
+    var logro_08_ls = Number(localStorage.getItem(cod_actividad + "D08_logro"));
+    var logro_09_ls = Number(localStorage.getItem(cod_actividad + "D09_logro"));
+    var logro_10_ls = Number(localStorage.getItem(cod_actividad + "D10_logro"));
 
+    console.log("logro_01_ls", logro_01_ls);
 
+    var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls) + Number(logro_05_ls) + Number(logro_06_ls) + Number(logro_07_ls) + Number(logro_08_ls) + Number(logro_09_ls) + Number(logro_10_ls);
+    var totalPorcentajes = 1000;
 
-        return logro;
-    });
+    var totalLogro = Math.round((sumaLogros / totalPorcentajes) * 100);
+
+    localStorage.setItem(cod_actividad + "_totalLogro", String(totalLogro));
+    console.log("Total logro: ", totalLogro);
+
+    window.player.SetVar("porcentaje_total", Number(localStorage.getItem(cod_actividad + "_totalLogro")));
+
+    console.log("Total logro: ", localStorage.getItem(cod_actividad + "_totalLogro"));
 }
 
 

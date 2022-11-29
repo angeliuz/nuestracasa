@@ -623,18 +623,8 @@ function Script23() {
   var logro_09 = window.getLogro(cod_actividad, "NC34U5A01D09");
   var logro_10 = window.getLogro(cod_actividad, "NC34U5A01D10");
 
-  console.log("logro_01", logro_01);
 
-  var sumaLogros = Number(logro_01) + Number(logro_02) + Number(logro_03) + Number(logro_04) + Number(logro_05) + Number(logro_06) + Number(logro_07) + Number(logro_08) + Number(logro_09) + Number(logro_10);
-  var totalPorcentajes = 1000;
+  window.getTotal(cod_actividad);
 
-  var totalLogro = Math.round((sumaLogros / totalPorcentajes) * 100);
-
-  localStorage.setItem(cod_actividad + "_totalLogro", String(totalLogro));
-  console.log("Total logro: ", totalLogro);
-
-  p.SetVar("porcentaje_total", Number(localStorage.getItem(cod_actividad + "_totalLogro")));
-
-  console.log("Total logro: ", localStorage.getItem(cod_actividad + "_totalLogro"));
 }
 
