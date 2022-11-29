@@ -138,7 +138,7 @@ export const getEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
     localStorage.setItem(cod_diapositiva + "_solucion", solucion);
     console.log("Solución LS:", localStorage.getItem(cod_diapositiva + "_solucion"))
     solucion != undefined ? localStorage.setItem(cod_diapositiva + "_solucion", true) : localStorage.setItem(cod_diapositiva + "_solucion", false)
-    window.player.SetVar("solucion_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_solucion"));
+    window.player.SetVar("solucion_" + indiceVariable, Boolean(localStorage.getItem(cod_diapositiva + "_solucion")));
 
     return solucion;
 
