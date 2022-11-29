@@ -2,73 +2,73 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5gq5yfv0K9t":
+      case "5egtGlMBUP8":
         Script1();
         break;
-      case "63JBB5CdAjr":
+      case "6J2oxETk2ne":
         Script2();
         break;
-      case "61sELFy3OJ4":
+      case "6OGMVBfJLc2":
         Script3();
         break;
-      case "6Aa5I23eSMy":
+      case "6XJEBjzBCnZ":
         Script4();
         break;
-      case "6bs988nVik5":
+      case "6jLRW6aXhxy":
         Script5();
         break;
-      case "6F26RYBlR5M":
+      case "6aqSy9zpjhv":
         Script6();
         break;
-      case "5xRRVCe3fhu":
+      case "6NVPkGfebi9":
         Script7();
         break;
-      case "63p9D7Uulg0":
+      case "5ssfjwoXHWG":
         Script8();
         break;
-      case "6NVaeeqGxum":
+      case "6JiCZ9aEkvC":
         Script9();
         break;
-      case "5WHlGk9xEAz":
+      case "5galEW68GFQ":
         Script10();
         break;
-      case "6MmXcHx94G0":
+      case "5e849XS3CVc":
         Script11();
         break;
-      case "6ebslnrNXfL":
+      case "5qfApHeSHgy":
         Script12();
         break;
-      case "63WEG1RIOMu":
+      case "6C9tsBVaAGi":
         Script13();
         break;
-      case "6oUZmlqr0Nd":
+      case "5uFNxmwxdQR":
         Script14();
         break;
-      case "6KhWVOzEJRI":
+      case "63ByPUWI6pd":
         Script15();
         break;
-      case "69yMlCs9MuJ":
+      case "5ldYVRLhPly":
         Script16();
         break;
-      case "5tYOpf0tmQB":
+      case "5viTehsFcim":
         Script17();
         break;
-      case "6cXV807lqzE":
+      case "5kE4zMSvcE1":
         Script18();
         break;
-      case "66fy3nmHSCH":
+      case "5xPfxnO7wWJ":
         Script19();
         break;
-      case "5uGBJ9agyiV":
+      case "5XE4Z4IzT1D":
         Script20();
         break;
-      case "62tVum9QZtG":
+      case "5xiXtJmJAtc":
         Script21();
         break;
-      case "6aNDboFnF8o":
+      case "6ABTd02lQGR":
         Script22();
         break;
-      case "5zY3hUJaBKl":
+      case "5f8ti7j0lRC":
         Script23();
         break;
   }
@@ -101,7 +101,6 @@ console.log("Inicializa actividades en BD");
 function Script2()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -166,7 +165,6 @@ console.log("trae respuesta guardadas en BD");
 function Script3()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -193,7 +191,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script4()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -205,7 +202,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script5()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -232,7 +228,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script6()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -244,7 +239,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script7()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -271,7 +265,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script8()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -283,7 +276,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script9()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -310,7 +302,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script10()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -322,7 +313,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script11()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -349,7 +339,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script12()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -361,7 +350,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script13()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -388,7 +376,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script14()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -400,7 +387,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script15()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -427,7 +413,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script16()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -439,7 +424,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script17()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -466,7 +450,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script18()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -478,7 +461,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script19()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -505,7 +487,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script20()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -517,7 +498,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script21()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
@@ -544,7 +524,6 @@ console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 function Script22()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -556,7 +535,6 @@ console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad,
 function Script23()
 {
   var p = GetPlayer();
-  player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
