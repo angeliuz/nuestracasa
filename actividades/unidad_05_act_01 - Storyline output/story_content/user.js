@@ -2,73 +2,73 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6K0NKZgVFCY":
+      case "65sdvLJ6Jab":
         Script1();
         break;
-      case "5yXyRciJQdQ":
+      case "5kixKslqOFm":
         Script2();
         break;
-      case "5eM4BIAlgbC":
+      case "68CYPyY1FMR":
         Script3();
         break;
-      case "5fyB7rS2BQ8":
+      case "5k88zfwOseC":
         Script4();
         break;
-      case "6n1iArjvdd6":
+      case "5X9PZB5NDZu":
         Script5();
         break;
-      case "69ESUJTgFel":
+      case "5owMljYPk3u":
         Script6();
         break;
-      case "6o90NZbIF3c":
+      case "6emQJR5sMlo":
         Script7();
         break;
-      case "63K1dEWI6RP":
+      case "6ZrPmfa2Vfr":
         Script8();
         break;
-      case "5arwwMKljfC":
+      case "6f2ynUvy5FT":
         Script9();
         break;
-      case "6RNwdvpjBCb":
+      case "5xYFkjbp5Lc":
         Script10();
         break;
-      case "5gSzbyYcqx8":
+      case "6jKr1Jmtvpz":
         Script11();
         break;
-      case "6j1CvM1rqD7":
+      case "6XKqlhq8Edt":
         Script12();
         break;
-      case "5sE2baPdEjh":
+      case "6j5jMmClDI4":
         Script13();
         break;
-      case "6pn2hWlbf4R":
+      case "5sGqeZGSN6z":
         Script14();
         break;
-      case "5hPSiCAj3Vy":
+      case "6IXZ4xwCgm7":
         Script15();
         break;
-      case "62F2uyh9sgV":
+      case "5bKXB79qja2":
         Script16();
         break;
-      case "5fAEYBbSPCa":
+      case "6h4MpyEOKya":
         Script17();
         break;
-      case "6AQ8NlBvZit":
+      case "5ujWSKFOEtL":
         Script18();
         break;
-      case "61bwSJ6MFiy":
+      case "6Ugrn0zAxhJ":
         Script19();
         break;
-      case "6Uq1MChmFKL":
+      case "6N21uUTUzG4":
         Script20();
         break;
-      case "5srONUAUiHR":
+      case "6Cqc1sbpoN4":
         Script21();
         break;
-      case "5qUcCEhcLf8":
+      case "6O36PTBD9HH":
         Script22();
         break;
-      case "6PYiiPUfwU2":
+      case "6VahG1vNgZ5":
         Script23();
         break;
   }
@@ -81,21 +81,21 @@ player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D01");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D02");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D03");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D04");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D05");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D06");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D07");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D08");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D09");
-window.setCodigoDiapositiva(cod_actividad, "NC34U5A01D10");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D01");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D02");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D03");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D04");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D05");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D06");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D07");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D08");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D09");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D10");
 
 window.getCodigoDiapositiva(cod_actividad, cod_diapositiva);
 window.getIntentos(cod_actividad, cod_diapositiva);
 
-console.log("Inicializa actividades en BD");
+console.log("Inicializa actividades en BD",cod_actividad+"D01");
 }
 
 function Script2()
@@ -105,49 +105,49 @@ player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
-var respuesta_01 = window.getRespuesta(cod_actividad, "NC34U5A01D01");
-var respuesta_02 = window.getRespuesta(cod_actividad, "NC34U5A01D02");
-var respuesta_03 = window.getRespuesta(cod_actividad, "NC34U5A01D03");
-var respuesta_04 = window.getRespuesta(cod_actividad, "NC34U5A01D04");
-var respuesta_05 = window.getRespuesta(cod_actividad, "NC34U5A01D05");
-var respuesta_06 = window.getRespuesta(cod_actividad, "NC34U5A01D06");
-var respuesta_07 = window.getRespuesta(cod_actividad, "NC34U5A01D07");
-var respuesta_08 = window.getRespuesta(cod_actividad, "NC34U5A01D08");
-var respuesta_09 = window.getRespuesta(cod_actividad, "NC34U5A01D09");
-var respuesta_10 = window.getRespuesta(cod_actividad, "NC34U5A01D10");
+var respuesta_01 = window.getRespuesta(cod_actividad, cod_actividad+"D01");
+var respuesta_02 = window.getRespuesta(cod_actividad, cod_actividad+"D02");
+var respuesta_03 = window.getRespuesta(cod_actividad, cod_actividad+"D03");
+var respuesta_04 = window.getRespuesta(cod_actividad, cod_actividad+"D04");
+var respuesta_05 = window.getRespuesta(cod_actividad, cod_actividad+"D05");
+var respuesta_06 = window.getRespuesta(cod_actividad, cod_actividad+"D06");
+var respuesta_07 = window.getRespuesta(cod_actividad, cod_actividad+"D07");
+var respuesta_08 = window.getRespuesta(cod_actividad, cod_actividad+"D08");
+var respuesta_09 = window.getRespuesta(cod_actividad, cod_actividad+"D09");
+var respuesta_10 = window.getRespuesta(cod_actividad, cod_actividad+"D10");
 
-var solucion_01 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D01");
-var solucion_02 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D02");
-var solucion_03 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D03");
-var solucion_04 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D04");
-var solucion_05 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D05");
-var solucion_06 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D06");
-var solucion_07 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D07");
-var solucion_08 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D08");
-var solucion_09 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D09");
-var solucion_10 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D10");
+var solucion_01 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D01");
+var solucion_02 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D02");
+var solucion_03 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D03");
+var solucion_04 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D04");
+var solucion_05 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D05");
+var solucion_06 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D06");
+var solucion_07 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D07");
+var solucion_08 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D08");
+var solucion_09 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D09");
+var solucion_10 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D10");
 
-var intento_01 = window.getIntentos(cod_actividad, "NC34U5A01D01");
-var intento_02 = window.getIntentos(cod_actividad, "NC34U5A01D02");
-var intento_03 = window.getIntentos(cod_actividad, "NC34U5A01D03");
-var intento_04 = window.getIntentos(cod_actividad, "NC34U5A01D04");
-var intento_05 = window.getIntentos(cod_actividad, "NC34U5A01D05");
-var intento_06 = window.getIntentos(cod_actividad, "NC34U5A01D06");
-var intento_07 = window.getIntentos(cod_actividad, "NC34U5A01D07");
-var intento_08 = window.getIntentos(cod_actividad, "NC34U5A01D08");
-var intento_09 = window.getIntentos(cod_actividad, "NC34U5A01D09");
-var intento_10 = window.getIntentos(cod_actividad, "NC34U5A01D10");
+var intento_01 = window.getIntentos(cod_actividad, cod_actividad+"D01");
+var intento_02 = window.getIntentos(cod_actividad, cod_actividad+"D02");
+var intento_03 = window.getIntentos(cod_actividad, cod_actividad+"D03");
+var intento_04 = window.getIntentos(cod_actividad, cod_actividad+"D04");
+var intento_05 = window.getIntentos(cod_actividad, cod_actividad+"D05");
+var intento_06 = window.getIntentos(cod_actividad, cod_actividad+"D06");
+var intento_07 = window.getIntentos(cod_actividad, cod_actividad+"D07");
+var intento_08 = window.getIntentos(cod_actividad, cod_actividad+"D08");
+var intento_09 = window.getIntentos(cod_actividad, cod_actividad+"D09");
+var intento_10 = window.getIntentos(cod_actividad, cod_actividad+"D10");
 
-var logro_01 = window.getLogro(cod_actividad, "NC34U5A01D01");
-var logro_02 = window.getLogro(cod_actividad, "NC34U5A01D02");
-var logro_03 = window.getLogro(cod_actividad, "NC34U5A01D03");
-var logro_04 = window.getLogro(cod_actividad, "NC34U5A01D04");
-var logro_05 = window.getLogro(cod_actividad, "NC34U5A01D05");
-var logro_06 = window.getLogro(cod_actividad, "NC34U5A01D06");
-var logro_07 = window.getLogro(cod_actividad, "NC34U5A01D07");
-var logro_08 = window.getLogro(cod_actividad, "NC34U5A01D08");
-var logro_09 = window.getLogro(cod_actividad, "NC34U5A01D09");
-var logro_10 = window.getLogro(cod_actividad, "NC34U5A01D10");
+var logro_01 = window.getLogro(cod_actividad, cod_actividad+"D01");
+var logro_02 = window.getLogro(cod_actividad, cod_actividad+"D02");
+var logro_03 = window.getLogro(cod_actividad, cod_actividad+"D03");
+var logro_04 = window.getLogro(cod_actividad, cod_actividad+"D04");
+var logro_05 = window.getLogro(cod_actividad, cod_actividad+"D05");
+var logro_06 = window.getLogro(cod_actividad, cod_actividad+"D06");
+var logro_07 = window.getLogro(cod_actividad, cod_actividad+"D07");
+var logro_08 = window.getLogro(cod_actividad, cod_actividad+"D08");
+var logro_09 = window.getLogro(cod_actividad, cod_actividad+"D09");
+var logro_10 = window.getLogro(cod_actividad, cod_actividad+"D10");
 
 console.log("trae info guardada en BD");
 }
@@ -499,49 +499,53 @@ player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
-var respuesta_01 = window.getRespuesta(cod_actividad, "NC34U5A01D01");
-var respuesta_02 = window.getRespuesta(cod_actividad, "NC34U5A01D02");
-var respuesta_03 = window.getRespuesta(cod_actividad, "NC34U5A01D03");
-var respuesta_04 = window.getRespuesta(cod_actividad, "NC34U5A01D04");
-var respuesta_05 = window.getRespuesta(cod_actividad, "NC34U5A01D05");
-var respuesta_06 = window.getRespuesta(cod_actividad, "NC34U5A01D06");
-var respuesta_07 = window.getRespuesta(cod_actividad, "NC34U5A01D07");
-var respuesta_08 = window.getRespuesta(cod_actividad, "NC34U5A01D08");
-var respuesta_09 = window.getRespuesta(cod_actividad, "NC34U5A01D09");
-var respuesta_10 = window.getRespuesta(cod_actividad, "NC34U5A01D10");
+var respuesta_01 = window.getRespuesta(cod_actividad, cod_actividad+"D01");
+var respuesta_02 = window.getRespuesta(cod_actividad, cod_actividad+"D02");
+var respuesta_03 = window.getRespuesta(cod_actividad, cod_actividad+"D03");
+var respuesta_04 = window.getRespuesta(cod_actividad, cod_actividad+"D04");
+var respuesta_05 = window.getRespuesta(cod_actividad, cod_actividad+"D05");
+var respuesta_06 = window.getRespuesta(cod_actividad, cod_actividad+"D06");
+var respuesta_07 = window.getRespuesta(cod_actividad, cod_actividad+"D07");
+var respuesta_08 = window.getRespuesta(cod_actividad, cod_actividad+"D08");
+var respuesta_09 = window.getRespuesta(cod_actividad, cod_actividad+"D09");
+var respuesta_10 = window.getRespuesta(cod_actividad, cod_actividad+"D10");
+var respuesta_11 = window.getRespuesta(cod_actividad, cod_actividad+"D11");
 
-var solucion_01 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D01");
-var solucion_02 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D02");
-var solucion_03 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D03");
-var solucion_04 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D04");
-var solucion_05 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D05");
-var solucion_06 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D06");
-var solucion_07 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D07");
-var solucion_08 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D08");
-var solucion_09 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D09");
-var solucion_10 = window.getEstadoSolucionario(cod_actividad, "NC34U5A01D10");
+var solucion_01 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D01");
+var solucion_02 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D02");
+var solucion_03 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D03");
+var solucion_04 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D04");
+var solucion_05 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D05");
+var solucion_06 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D06");
+var solucion_07 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D07");
+var solucion_08 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D08");
+var solucion_09 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D09");
+var solucion_10 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D10");
+var solucion_11 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D11");
 
-var intento_01 = window.getIntentos(cod_actividad, "NC34U5A01D01");
-var intento_02 = window.getIntentos(cod_actividad, "NC34U5A01D02");
-var intento_03 = window.getIntentos(cod_actividad, "NC34U5A01D03");
-var intento_04 = window.getIntentos(cod_actividad, "NC34U5A01D04");
-var intento_05 = window.getIntentos(cod_actividad, "NC34U5A01D05");
-var intento_06 = window.getIntentos(cod_actividad, "NC34U5A01D06");
-var intento_07 = window.getIntentos(cod_actividad, "NC34U5A01D07");
-var intento_08 = window.getIntentos(cod_actividad, "NC34U5A01D08");
-var intento_09 = window.getIntentos(cod_actividad, "NC34U5A01D09");
-var intento_10 = window.getIntentos(cod_actividad, "NC34U5A01D10");
+var intento_01 = window.getIntentos(cod_actividad, cod_actividad+"D01");
+var intento_02 = window.getIntentos(cod_actividad, cod_actividad+"D02");
+var intento_03 = window.getIntentos(cod_actividad, cod_actividad+"D03");
+var intento_04 = window.getIntentos(cod_actividad, cod_actividad+"D04");
+var intento_05 = window.getIntentos(cod_actividad, cod_actividad+"D05");
+var intento_06 = window.getIntentos(cod_actividad, cod_actividad+"D06");
+var intento_07 = window.getIntentos(cod_actividad, cod_actividad+"D07");
+var intento_08 = window.getIntentos(cod_actividad, cod_actividad+"D08");
+var intento_09 = window.getIntentos(cod_actividad, cod_actividad+"D09");
+var intento_10 = window.getIntentos(cod_actividad, cod_actividad+"D10");
+var intento_11 = window.getIntentos(cod_actividad, cod_actividad+"D11");
 
-var logro_01 = window.getLogro(cod_actividad, "NC34U5A01D01");
-var logro_02 = window.getLogro(cod_actividad, "NC34U5A01D02");
-var logro_03 = window.getLogro(cod_actividad, "NC34U5A01D03");
-var logro_04 = window.getLogro(cod_actividad, "NC34U5A01D04");
-var logro_05 = window.getLogro(cod_actividad, "NC34U5A01D05");
-var logro_06 = window.getLogro(cod_actividad, "NC34U5A01D06");
-var logro_07 = window.getLogro(cod_actividad, "NC34U5A01D07");
-var logro_08 = window.getLogro(cod_actividad, "NC34U5A01D08");
-var logro_09 = window.getLogro(cod_actividad, "NC34U5A01D09");
-var logro_10 = window.getLogro(cod_actividad, "NC34U5A01D10");
+var logro_01 = window.getLogro(cod_actividad, cod_actividad+"D01");
+var logro_02 = window.getLogro(cod_actividad, cod_actividad+"D02");
+var logro_03 = window.getLogro(cod_actividad, cod_actividad+"D03");
+var logro_04 = window.getLogro(cod_actividad, cod_actividad+"D04");
+var logro_05 = window.getLogro(cod_actividad, cod_actividad+"D05");
+var logro_06 = window.getLogro(cod_actividad, cod_actividad+"D06");
+var logro_07 = window.getLogro(cod_actividad, cod_actividad+"D07");
+var logro_08 = window.getLogro(cod_actividad, cod_actividad+"D08");
+var logro_09 = window.getLogro(cod_actividad, cod_actividad+"D09");
+var logro_10 = window.getLogro(cod_actividad, cod_actividad+"D10");
+var logro_11 = window.getLogro(cod_actividad, cod_actividad+"D11");
 
 window.getTotal(cod_actividad);
 }
