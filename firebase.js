@@ -112,7 +112,7 @@ export const getIntentos = async (cod_actividad, cod_diapositiva) => {
 
 
 export const setEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
-    localStorage.setItem(cod_diapositiva + "_solucion", "true");
+    localStorage.setItem(cod_diapositiva + "_solucion", "VISTO");
     const docRef = doc(db, "actividades", getUserIdConecta());
     var docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
 
@@ -120,7 +120,7 @@ export const setEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
         console.log("No existe");
     } else {
         await updateDoc(doc(docRef, cod_actividad, cod_diapositiva), {
-            solucion: true
+            solucion: "VISTO"
         }).then(async () => {
             docSnap = await getDoc(doc(docRef, cod_actividad, cod_diapositiva));
             console.log("Estado Solución", docSnap.data()["solucion"]);
@@ -137,8 +137,8 @@ export const getEstadoSolucionario = async (cod_actividad, cod_diapositiva) => {
         localStorage.setItem(cod_diapositiva + "_solucion", solucion);
         // console.log("Solución LS:", localStorage.getItem(cod_diapositiva + "_solucion"))
         console.log("GET SOLUCION FIREBASE", doc.data().solucion);
-        solucion != undefined ? localStorage.setItem(cod_diapositiva + "_solucion", "true") : localStorage.setItem(cod_diapositiva + "_solucion", "false");
-        solucion != undefined ? solucion : solucion = false;
+        solucion != undefined ? localStorage.setItem(cod_diapositiva + "_solucion", "VISTO") : localStorage.setItem(cod_diapositiva + "_solucion", "NO VISTO");
+        solucion != undefined ? solucion : solucion = "NO VISTO";
         console.log("GET SOLUCION LOCALSTORE:", localStorage.getItem(cod_diapositiva + "_solucion"));
         console.log("GET SOLUCION SOLUCION:", solucion);
         window.player.SetVar("solucion_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_solucion"));
