@@ -224,32 +224,48 @@ export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
 
 }
 
-export const getTotal = async (cod_actividad) => {
+export const getTotal = async (cod_actividad, totalDiapos) => {
 
-    var logro_01_ls = Number(localStorage.getItem(cod_actividad + "D01_logro"));
-    var logro_02_ls = Number(localStorage.getItem(cod_actividad + "D02_logro"));
-    var logro_03_ls = Number(localStorage.getItem(cod_actividad + "D03_logro"));
-    var logro_04_ls = Number(localStorage.getItem(cod_actividad + "D04_logro"));
-    var logro_05_ls = Number(localStorage.getItem(cod_actividad + "D05_logro"));
-    var logro_06_ls = Number(localStorage.getItem(cod_actividad + "D06_logro"));
-    var logro_07_ls = Number(localStorage.getItem(cod_actividad + "D07_logro"));
-    var logro_08_ls = Number(localStorage.getItem(cod_actividad + "D08_logro"));
-    var logro_09_ls = Number(localStorage.getItem(cod_actividad + "D09_logro"));
-    var logro_10_ls = Number(localStorage.getItem(cod_actividad + "D10_logro"));
+    // var logro_01_ls = Number(localStorage.getItem(cod_actividad + "D01_logro"));
+    // var logro_02_ls = Number(localStorage.getItem(cod_actividad + "D02_logro"));
+    // var logro_03_ls = Number(localStorage.getItem(cod_actividad + "D03_logro"));
+    // var logro_04_ls = Number(localStorage.getItem(cod_actividad + "D04_logro"));
+    // var logro_05_ls = Number(localStorage.getItem(cod_actividad + "D05_logro"));
+    // var logro_06_ls = Number(localStorage.getItem(cod_actividad + "D06_logro"));
+    // var logro_07_ls = Number(localStorage.getItem(cod_actividad + "D07_logro"));
+    // var logro_08_ls = Number(localStorage.getItem(cod_actividad + "D08_logro"));
+    // var logro_09_ls = Number(localStorage.getItem(cod_actividad + "D09_logro"));
+    // var logro_10_ls = Number(localStorage.getItem(cod_actividad + "D10_logro"));
 
-    console.log("logro_01_ls", logro_01_ls);
+    // console.log("logro_01_ls", logro_01_ls);
 
-    var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls) + Number(logro_05_ls) + Number(logro_06_ls) + Number(logro_07_ls) + Number(logro_08_ls) + Number(logro_09_ls) + Number(logro_10_ls);
-    var totalPorcentajes = 1000;
+    let sumaLogros = 0;
 
-    var totalLogro = Math.round((sumaLogros / totalPorcentajes) * 100);
+    for(let i = 1; i<=totalDiapos; i++){
+        if(i<10){
+            sumaLogros += Number(localStorage.getItem(cod_actividad + "D0"+i+"_logro"))
+            console.log("getTotal: sumaLogros menor de 10: " ,sumaLogros);
+        }else{
+            sumaLogros += Number(localStorage.getItem(cod_actividad + "D"+i+"_logro"))
+            console.log("getTotal: sumaLogros mayor de 10: " ,sumaLogros);
+        }
+    }
 
+    console.log("getTotal: sumaLogros: ", sumaLogros)
+
+   // var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls) + Number(logro_05_ls) + Number(logro_06_ls) + Number(logro_07_ls) + Number(logro_08_ls) + Number(logro_09_ls) + Number(logro_10_ls);
+    let totalPorcentajes = totalDiapos*100;
+    console.log("getTotal: totalPorcentaje: ", totalPorcentajes)
+
+
+    let totalLogro = Math.round((sumaLogros / totalPorcentajes) * 100);
+    console.log("getTotal: Total logro: ", totalLogro);
     localStorage.setItem(cod_actividad + "_totalLogro", String(totalLogro));
-    console.log("Total logro: ", totalLogro);
+    console.log("getTotal: Total logro LS: ", totalLogro);
 
     window.player.SetVar("porcentaje_total", Number(localStorage.getItem(cod_actividad + "_totalLogro")));
 
-    console.log("Total logro: ", localStorage.getItem(cod_actividad + "_totalLogro"));
+    console.log("getTotal: Total logro: ", localStorage.getItem(cod_actividad + "_totalLogro"));
 }
 
 
