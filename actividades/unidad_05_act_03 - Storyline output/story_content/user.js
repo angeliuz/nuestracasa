@@ -2,91 +2,91 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6MZvZckMCW9":
+      case "6RyQ0b7tZNd":
         Script1();
         break;
-      case "5r7eXTKaXD1":
+      case "6iIqv5Rjhef":
         Script2();
         break;
-      case "619XN03XGgB":
+      case "5wrssxLCJAp":
         Script3();
         break;
-      case "5eh3o1snSjD":
+      case "5pl9P4KnqRV":
         Script4();
         break;
-      case "6Dkrn4LOUZq":
+      case "5vzLmAz7Ps7":
         Script5();
         break;
-      case "6ibTkWZpQsr":
+      case "6PJyacuS62C":
         Script6();
         break;
-      case "6LteMZu9gJd":
+      case "6Y2DTyNftjz":
         Script7();
         break;
-      case "6pTroo4mkrM":
+      case "5j1lZfgudjd":
         Script8();
         break;
-      case "6OafmeCuP7f":
+      case "6bMXQBuf7B7":
         Script9();
         break;
-      case "5b9glyU2DX3":
+      case "6q7mycUMW4r":
         Script10();
         break;
-      case "6qpCdHZRCw2":
+      case "63Q8MwoxCg9":
         Script11();
         break;
-      case "5mrPeRUDv0b":
+      case "5eg7cxxwYTZ":
         Script12();
         break;
-      case "65RKG8sv0pj":
+      case "6Y6dY3j2hpD":
         Script13();
         break;
-      case "5w7sqpRUreu":
+      case "5j53p1O51Wy":
         Script14();
         break;
-      case "5bTgxRklr01":
+      case "6L5KdNTze0W":
         Script15();
         break;
-      case "5t5SHSwVrBV":
+      case "5nRBGcuAIHx":
         Script16();
         break;
-      case "6XrpCWaptPg":
+      case "62tNNBaqFgQ":
         Script17();
         break;
-      case "5izxBGItkfK":
+      case "656VpiuSW2Y":
         Script18();
         break;
-      case "5e01bDNvL0i":
+      case "6e2bPSdWvcj":
         Script19();
         break;
-      case "6BniuD6mq4a":
+      case "6UulOohIGJ0":
         Script20();
         break;
-      case "64g7leu95Al":
+      case "6QrJE33Vr7w":
         Script21();
         break;
-      case "5cMGjlmZgho":
+      case "60ZTmjfVVLK":
         Script22();
         break;
-      case "68hp67tyeZL":
+      case "5dylE2UUIKb":
         Script23();
         break;
-      case "5Z6izNZ1sBA":
+      case "5qrQIemrPuL":
         Script24();
         break;
-      case "5mFUDmGX65b":
+      case "5YIDkouuAFR":
         Script25();
         break;
-      case "66qmCqsfbQt":
+      case "6cH9yVvbK1i":
         Script26();
         break;
-      case "5Wr0jeBnBpb":
+      case "6gJOtGcrVDj":
         Script27();
         break;
-      case "699mTeRJZg1":
+      case "5YTlhCVs45S":
         Script28();
         break;
-      case "6CyVmaX2E1K":
+      case "6oZVu9ik8JP":
         Script29();
         break;
   }
@@ -286,14 +286,16 @@ function Script11()
   var cod_diapositiva = p.GetVar("cod_diapositiva");
   var logro = p.GetVar("logro");
   var circulo1 = p.GetVar("circulo1");
-  var circulo1 = p.GetVar("circulo2");
-  var circulo1 = p.GetVar("circulo3");
-  var circulo1 = p.GetVar("circulo4");
-  var circulo1 = p.GetVar("circulo5");
-  var circulo1 = p.GetVar("circulo6");
-  var circulo1 = p.GetVar("circulo7");
-  var respuesta =[circulo1,circulo2,circulo3,circulo4,circulo5,circulo6,circulo7]
+  var circulo2 = p.GetVar("circulo2");
+  var circulo3 = p.GetVar("circulo3");
+  var circulo4 = p.GetVar("circulo4");
+  var circulo5 = p.GetVar("circulo5");
+  var circulo6 = p.GetVar("circulo6");
+  var circulo7 = p.GetVar("circulo7");
+  var respuesta =[circulo1,circulo2,circulo3,circulo4,circulo5,circulo6,circulo7];
   var respuesta_06 = p.GetVar("respuesta_06");
+console.log(respuesta);
+console.log(circulo1);
 
   if (respuesta != respuesta_06) {
     console.log("no es igual");
