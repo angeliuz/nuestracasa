@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="false">
             <options>
-              <option name="title_text" value="unidad_05_act_02" />
+              <option name="title_text" value="NC34U5A02" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -79,7 +79,7 @@
       </optiongroup>
       <optiongroup name="bottombaroptions">
         <options>
-          <option name="bottombar_enabled" value="true" />
+          <option name="bottombar_enabled" value="false" />
         </options>
       </optiongroup>
     </optiongroups>
