@@ -2,91 +2,91 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6RyQ0b7tZNd":
+      case "610dMVquagK":
         Script1();
         break;
-      case "6iIqv5Rjhef":
+      case "6DW3iuu3cNy":
         Script2();
         break;
-      case "5wrssxLCJAp":
+      case "60iQfdYorFz":
         Script3();
         break;
-      case "5pl9P4KnqRV":
+      case "6HzITY7K0yo":
         Script4();
         break;
-      case "5vzLmAz7Ps7":
+      case "5qSnRJ7RtOx":
         Script5();
         break;
-      case "6PJyacuS62C":
+      case "6fr4I6eREY0":
         Script6();
         break;
-      case "6Y2DTyNftjz":
+      case "5vkmhE37UHO":
         Script7();
         break;
-      case "5j1lZfgudjd":
+      case "6kwMhnztGBO":
         Script8();
         break;
-      case "6bMXQBuf7B7":
+      case "5jm4Dko75Yi":
         Script9();
         break;
-      case "6q7mycUMW4r":
+      case "6YLXGGbt6rD":
         Script10();
         break;
-      case "63Q8MwoxCg9":
+      case "5pStx7m8GxF":
         Script11();
         break;
-      case "5eg7cxxwYTZ":
+      case "6mfKGZgX0oS":
         Script12();
         break;
-      case "6Y6dY3j2hpD":
+      case "6bY0vtGxQ8U":
         Script13();
         break;
-      case "5j53p1O51Wy":
+      case "5vfbK9L1zPJ":
         Script14();
         break;
-      case "6L5KdNTze0W":
+      case "6oKDkpRhSzK":
         Script15();
         break;
-      case "5nRBGcuAIHx":
+      case "6NSjHXblxWB":
         Script16();
         break;
-      case "62tNNBaqFgQ":
+      case "6Y77fDkpwDo":
         Script17();
         break;
-      case "656VpiuSW2Y":
+      case "5wC40q85vRH":
         Script18();
         break;
-      case "6e2bPSdWvcj":
+      case "6Z1syOE4vha":
         Script19();
         break;
-      case "6UulOohIGJ0":
+      case "5gk6SVP52ZX":
         Script20();
         break;
-      case "6QrJE33Vr7w":
+      case "6YmKltdHp31":
         Script21();
         break;
-      case "60ZTmjfVVLK":
+      case "6NJjifcTh03":
         Script22();
         break;
-      case "5dylE2UUIKb":
+      case "6dXAYpQbCaE":
         Script23();
         break;
-      case "5qrQIemrPuL":
+      case "5jcs66CAOuP":
         Script24();
         break;
-      case "5YIDkouuAFR":
+      case "5osb4QOVsnI":
         Script25();
         break;
-      case "6cH9yVvbK1i":
+      case "5wtLPh1Rb7O":
         Script26();
         break;
-      case "6gJOtGcrVDj":
+      case "6F1TQRA5hsq":
         Script27();
         break;
-      case "5YTlhCVs45S":
+      case "5fe8pyz3IgN":
         Script28();
         break;
-      case "6oZVu9ik8JP":
+      case "6ogVBHGKV61":
         Script29();
         break;
   }
@@ -591,7 +591,7 @@ function Script27()
   var arrastre5 = p.GetVar("arrastre5");
   var arrastre6 = p.GetVar("arrastre6");
   var arrastre7 = p.GetVar("arrastre7");
-  var respuesta = [arrastre1,arrastre2,arrastre3,arrastre,4,arrastre5,arrastre6,arrastre7]
+  var respuesta = [arrastre1,arrastre2,arrastre3,arrastre4,arrastre5,arrastre6,arrastre7];
   var respuesta_14 = p.GetVar("respuesta_14");
 
   if (respuesta != respuesta_14) {
