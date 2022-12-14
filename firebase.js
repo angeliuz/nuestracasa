@@ -214,7 +214,8 @@ export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
             let indiceVariable = cod_diapositiva.slice(-2);
 
             localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
-            window.player.SetVar("respuesta_" + indiceVariable, Number(localStorage.getItem(cod_diapositiva + "_respuesta")));
+            window.player.SetVar("respuesta_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
+            //window.player.SetVar("respuesta_" + indiceVariable, "hola, chao, hola2");
 
             console.log("Get Respuesta:", doc.data().respuesta);
 
