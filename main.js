@@ -10,7 +10,8 @@ import {
     getLogro,
     setRespuesta,
     getRespuesta,
-    getTotal
+    getTotal,
+    getRespuestaMultiple
 }
     from "./firebase.js"
 
@@ -28,6 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
     window.setRespuesta = setRespuesta;
     window.getRespuesta = getRespuesta;
     window.getTotal = getTotal;
+    window.getRespuestaMultiple = getRespuestaMultiple;
 
     var player = null;
 
