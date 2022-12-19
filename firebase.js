@@ -225,6 +225,31 @@ export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
 
 }
 
+export const getRespuestaMultiple = async (cod_actividad, cod_diapositiva, idRespuesta) => {
+    const docRef = doc(db, "actividades", getUserIdConecta());
+    await getDoc(doc(docRef, cod_actividad, cod_diapositiva)).then(doc => {
+        if (!doc.data().respuesta) {
+            return
+        } else {
+
+            var respuesta = doc.data().respuesta;
+
+            let indiceVariable = cod_diapositiva.slice(-2);
+
+            localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
+            window.player.SetVar("respuesta_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
+            //window.player.SetVar("respuesta_" + indiceVariable, "hola, chao, hola2");
+
+            console.log("Get Respuestaaaaa:", doc.data().respuesta[idRespuesta - 1]);
+
+            return doc.data().respuesta[idRespuesta - 1];
+        }
+    })
+
+}
+
+
+
 export const getTotal = async (cod_actividad, totalDiapos) => {
 
     // var logro_01_ls = Number(localStorage.getItem(cod_actividad + "D01_logro"));
@@ -242,20 +267,20 @@ export const getTotal = async (cod_actividad, totalDiapos) => {
 
     let sumaLogros = 0;
 
-    for(let i = 1; i<=totalDiapos; i++){
-        if(i<10){
-            sumaLogros += Number(localStorage.getItem(cod_actividad + "D0"+i+"_logro"))
-            console.log("getTotal: sumaLogros menor de 10: " ,sumaLogros);
-        }else{
-            sumaLogros += Number(localStorage.getItem(cod_actividad + "D"+i+"_logro"))
-            console.log("getTotal: sumaLogros mayor de 10: " ,sumaLogros);
+    for (let i = 1; i <= totalDiapos; i++) {
+        if (i < 10) {
+            sumaLogros += Number(localStorage.getItem(cod_actividad + "D0" + i + "_logro"))
+            console.log("getTotal: sumaLogros menor de 10: ", sumaLogros);
+        } else {
+            sumaLogros += Number(localStorage.getItem(cod_actividad + "D" + i + "_logro"))
+            console.log("getTotal: sumaLogros mayor de 10: ", sumaLogros);
         }
     }
 
     console.log("getTotal: sumaLogros: ", sumaLogros)
 
-   // var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls) + Number(logro_05_ls) + Number(logro_06_ls) + Number(logro_07_ls) + Number(logro_08_ls) + Number(logro_09_ls) + Number(logro_10_ls);
-    let totalPorcentajes = totalDiapos*100;
+    // var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls) + Number(logro_05_ls) + Number(logro_06_ls) + Number(logro_07_ls) + Number(logro_08_ls) + Number(logro_09_ls) + Number(logro_10_ls);
+    let totalPorcentajes = totalDiapos * 100;
     console.log("getTotal: totalPorcentaje: ", totalPorcentajes)
 
 
