@@ -225,7 +225,37 @@ export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
 
 }
 
-export const getRespuestaMultiple = async (cod_actividad, cod_diapositiva, idRespuesta) => {
+// export const getRespuestaMultiple = async (cod_actividad, cod_diapositiva, nameVar, idRespuesta) => {
+//     const docRef = doc(db, "actividades", getUserIdConecta());
+//     await getDoc(doc(docRef, cod_actividad, cod_diapositiva)).then(doc => {
+//         if (!doc.data().respuesta) {
+//             return
+//         } else {
+
+//             var respuesta = doc.data().respuesta;
+
+//             let indiceVariable = cod_diapositiva.slice(-2);
+
+//             localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
+//             localStorage.setItem(cod_diapositiva + "_"+nameVar+idRespuesta, doc.data().respuesta[idRespuesta - 1]);
+            
+//             window.player.SetVar("respuesta_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
+//             window.player.SetVar(nameVar + idRespuesta, localStorage.getItem(cod_diapositiva+"_"+nameVar+idRespuesta));
+
+//             // window.player.SetVar("drag_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
+            
+//             //window.player.SetVar("respuesta_" + indiceVariable, "hola, chao, hola2");
+
+//             console.log("Get Respuesta:", doc.data().respuesta[idRespuesta - 1]);
+//             console.log("Get Respuesta LS:", localStorage.getItem(cod_diapositiva + "_"+nameVar+idRespuesta));
+
+//             return doc.data().respuesta[idRespuesta - 1];
+//         }
+//     })
+
+// }
+
+export const getRespuestaMultiple = async (cod_actividad, cod_diapositiva, nameVar, indice) => {
     const docRef = doc(db, "actividades", getUserIdConecta());
     await getDoc(doc(docRef, cod_actividad, cod_diapositiva)).then(doc => {
         if (!doc.data().respuesta) {
@@ -237,17 +267,23 @@ export const getRespuestaMultiple = async (cod_actividad, cod_diapositiva, idRes
             let indiceVariable = cod_diapositiva.slice(-2);
 
             localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
+            localStorage.setItem(cod_diapositiva + "_"+nameVar, doc.data().respuesta[indice - 1]);
+            
             window.player.SetVar("respuesta_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
+            window.player.SetVar(nameVar, localStorage.getItem(cod_diapositiva+"_"+nameVar));
+
+            // window.player.SetVar("drag_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
+            
             //window.player.SetVar("respuesta_" + indiceVariable, "hola, chao, hola2");
 
-            console.log("Get Respuestaaaaa:", doc.data().respuesta[idRespuesta - 1]);
+            console.log("Get Respuesta:", doc.data().respuesta[indice - 1]);
+            console.log("Get Respuesta LS:", localStorage.getItem(cod_diapositiva + "_"+nameVar));
 
-            return doc.data().respuesta[idRespuesta - 1];
+            return doc.data().respuesta[indice - 1];
         }
     })
 
 }
-
 
 
 export const getTotal = async (cod_actividad, totalDiapos) => {
