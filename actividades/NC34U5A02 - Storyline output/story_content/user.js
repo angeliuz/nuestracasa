@@ -2,74 +2,71 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5zCt8MfV8mA":
+      case "66D4NgddVI5":
         Script1();
         break;
-      case "6M6Rgntimza":
+      case "5ZPtxmPAG6f":
         Script2();
         break;
-      case "5VLE86PLvEm":
+      case "5pq2HSzFhAt":
         Script3();
         break;
-      case "6qkIc3ElcKm":
+      case "6A6s8hSXwHX":
         Script4();
         break;
-      case "5arBbeWAdEE":
+      case "6bTxo6DZncL":
         Script5();
         break;
-      case "65hc2T2saSd":
+      case "5XAFDWpymv9":
         Script6();
         break;
-      case "5wTs5Qg0pfH":
+      case "6lGdFhFv1DL":
         Script7();
         break;
-      case "6ch0p2LIrck":
+      case "60wvoSSOSIF":
         Script8();
         break;
-      case "5yCSw13JmX5":
+      case "6AUOkHzRdL2":
         Script9();
         break;
-      case "5Xsd58mDp8C":
+      case "6AcWmdRlwFE":
         Script10();
         break;
-      case "6jCkRerKV8E":
+      case "6G00Ev6Z2y1":
         Script11();
         break;
-      case "5W6pUKajvvW":
+      case "5Wj8cfh6Xwu":
         Script12();
         break;
-      case "6hicwVFICHG":
+      case "5dnptA3UINO":
         Script13();
         break;
-      case "5vyurnBD9uF":
+      case "6JJtRW2wXlV":
         Script14();
         break;
-      case "6Ft2q1xP0Bd":
+      case "6g3BQ4WVDtp":
         Script15();
         break;
-      case "6mOwUSvZhZL":
+      case "69nmHTPufFq":
         Script16();
         break;
-      case "61mcnYoLz4I":
+      case "5WE3nS4Q5AT":
         Script17();
         break;
-      case "6WwAJUFFBTk":
+      case "6a1ZNJn9sAW":
         Script18();
         break;
-      case "6W5aIqQvwwo":
+      case "6IhmDuNzIyB":
         Script19();
         break;
-      case "6H974x5SiDu":
+      case "6Spd4LJiFY9":
         Script20();
         break;
-      case "5pxEIMbvInw":
+      case "6OQJGOcchNJ":
         Script21();
         break;
-      case "6LNXClfsE2l":
+      case "6eHDPCXY6oq":
         Script22();
-        break;
-      case "68VxJlPT45B":
-        Script23();
         break;
   }
 }
@@ -496,35 +493,13 @@ function Script21()
 player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var logro = p.GetVar("logro");
-var respuesta = p.GetVar("respuesta");
-var respuesta_07 = p.GetVar("respuesta_07");
-
-if (respuesta != respuesta_07) {
-  console.log("no es igual");
-  window.setIntentos(cod_actividad, cod_diapositiva);
-  window.setLogro(cod_actividad, cod_diapositiva, logro);
-  window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
-} else {
-  console.log("es igual");
-}
-
-console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
-}
-
-function Script22()
-{
-  var p = GetPlayer();
-player = GetPlayer();
-var cod_actividad = p.GetVar("cod_actividad");
-var cod_diapositiva = p.GetVar("cod_diapositiva");
 
 window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script23()
+function Script22()
 {
   var p = GetPlayer();
 player = GetPlayer();
