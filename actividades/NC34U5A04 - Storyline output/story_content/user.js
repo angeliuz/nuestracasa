@@ -2,55 +2,55 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5yEYDmztYWK":
+      case "61NmG9tkoC8":
         Script1();
         break;
-      case "6UsRtLXqBiR":
+      case "5i35pzZUgJs":
         Script2();
         break;
-      case "6ATUQDMMOCT":
+      case "5lxsBHTFIUb":
         Script3();
         break;
-      case "5z8DkEvT8ZB":
+      case "69MtK295nYn":
         Script4();
         break;
-      case "5dWj84waCk2":
+      case "6N5KzoGo0Zg":
         Script5();
         break;
-      case "68uamXJYsU5":
+      case "5kMx5VoCJKb":
         Script6();
         break;
-      case "5b88bX5ScsI":
+      case "6jpk5k4kX9j":
         Script7();
         break;
-      case "6IX2BdNzYKD":
+      case "5Y7gyomBERQ":
         Script8();
         break;
-      case "6AYKaAtnGY5":
+      case "6RsFw4MCoL0":
         Script9();
         break;
-      case "5osWUwXGRgU":
+      case "6IztnSR2sh7":
         Script10();
         break;
-      case "6QSi1NMi3km":
+      case "5ac0T1UZNG7":
         Script11();
         break;
-      case "5iID9jBfJiE":
+      case "5wbFqy1oyqB":
         Script12();
         break;
-      case "6JR5IqneB61":
+      case "6A1w486rRiK":
         Script13();
         break;
-      case "5XDjoLKBNPc":
+      case "5qyJYyOO102":
         Script14();
         break;
-      case "6AOYP9c0MMJ":
+      case "6qOE3CWtohs":
         Script15();
         break;
-      case "6dsPB0uJTQs":
+      case "5iPV85s4Feg":
         Script16();
         break;
-      case "5dG01U2zWDo":
+      case "62R9dhUJ2cb":
         Script17();
         break;
   }
@@ -158,7 +158,7 @@ var respuesta_01 = p.GetVar("respuesta_01");
 if (respuesta != respuesta_01) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
-  window.setLogro(cod_actividad, cod_diapositiva, logro);
+  //window.setLogro(cod_actividad, cod_diapositiva, logro);
   window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
 } else {
   console.log("es igual");
@@ -344,7 +344,7 @@ var respuesta_06 = p.GetVar("respuesta_06");
 if (respuesta != respuesta_06) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
-  window.setLogro(cod_actividad, cod_diapositiva, logro);
+  //window.setLogro(cod_actividad, cod_diapositiva, logro);
   window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
 } else {
   console.log("es igual");
