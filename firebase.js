@@ -303,20 +303,18 @@ export const getTotal = async (cod_actividad, totalDiapos) => {
 
     let sumaLogros = 0;
 
-    for (let i = 1; i <= totalDiapos; i++) {
+    for (let i = 0; i <= totalDiapos.length; i++) {
         if (i < 10) {
-            sumaLogros += Number(localStorage.getItem(cod_actividad + "D0" + i + "_logro"))
+            sumaLogros += Number(localStorage.getItem(cod_actividad + totalDiapos[i]+ "_logro"))
             console.log("getTotal: sumaLogros menor de 10: ", sumaLogros);
-        } else {
-            sumaLogros += Number(localStorage.getItem(cod_actividad + "D" + i + "_logro"))
-            console.log("getTotal: sumaLogros mayor de 10: ", sumaLogros);
+            console.log("getTotal: indice Diapo: ", totalDiapos[i]);
         }
     }
 
     console.log("getTotal: sumaLogros: ", sumaLogros)
 
     // var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls) + Number(logro_05_ls) + Number(logro_06_ls) + Number(logro_07_ls) + Number(logro_08_ls) + Number(logro_09_ls) + Number(logro_10_ls);
-    let totalPorcentajes = totalDiapos * 100;
+    let totalPorcentajes = totalDiapos.length * 100;
     console.log("getTotal: totalPorcentaje: ", totalPorcentajes)
 
 
