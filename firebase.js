@@ -304,19 +304,18 @@ export const getTotal = async (cod_actividad, totalDiapos) => {
     let sumaLogros = 0;
 
     for (let i = 0; i <= totalDiapos.length; i++) {
-        if (i < 10) {
-            sumaLogros += Number(localStorage.getItem(cod_actividad + totalDiapos[i]+ "_logro"))
+        if (i < 15) {
+            sumaLogros += Number(localStorage.getItem(cod_actividad + totalDiapos[i]+ "_logro"));
             console.log("getTotal: sumaLogros menor de 10: ", sumaLogros);
             console.log("getTotal: indice Diapo: ", totalDiapos[i]);
         }
     }
 
-    console.log("getTotal: sumaLogros: ", sumaLogros)
+    console.log("getTotal: sumaLogros: ", sumaLogros);
 
     // var sumaLogros = Number(logro_01_ls) + Number(logro_02_ls) + Number(logro_03_ls) + Number(logro_04_ls) + Number(logro_05_ls) + Number(logro_06_ls) + Number(logro_07_ls) + Number(logro_08_ls) + Number(logro_09_ls) + Number(logro_10_ls);
     let totalPorcentajes = totalDiapos.length * 100;
-    console.log("getTotal: totalPorcentaje: ", totalPorcentajes)
-
+    console.log("getTotal: totalPorcentaje: ", totalPorcentajes);
 
     let totalLogro = Math.round((sumaLogros / totalPorcentajes) * 100);
     console.log("getTotal: Total logro: ", totalLogro);
@@ -328,10 +327,9 @@ export const getTotal = async (cod_actividad, totalDiapos) => {
     console.log("getTotal: Total logro: ", localStorage.getItem(cod_actividad + "_totalLogro"));
 }
 
-
 const getUserIdConecta = () => {
     var str = localStorage.getItem('mm_data');
     var arregloData = new Array();
     arregloData = str.split(",");
-    return arregloData[3]
+    return arregloData[3];
 }
