@@ -2,73 +2,73 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6AFd5mYwevL":
+      case "5oMzDOMEovB":
         Script1();
         break;
-      case "6H383W2KKHj":
+      case "6ayF339lbfo":
         Script2();
         break;
-      case "5rfHqFzWAp7":
+      case "5sEeCmH3Xqo":
         Script3();
         break;
-      case "5euRuoFp1sV":
+      case "5jBQ52eSpkU":
         Script4();
         break;
-      case "5ckuRucYcuy":
+      case "5oTh9bqXOqS":
         Script5();
         break;
-      case "6hq1Bh5rrkU":
+      case "5Ulw8uC1jor":
         Script6();
         break;
-      case "6J8vWBviUyd":
+      case "67bbGrRfkzp":
         Script7();
         break;
-      case "5lmkD5xea2o":
+      case "6avq9QYwIa5":
         Script8();
         break;
-      case "6H6nHGwGszH":
+      case "5y5YDj7mbk6":
         Script9();
         break;
-      case "60kv635seai":
+      case "5vCwkFTOkFy":
         Script10();
         break;
-      case "5k5ZMvXigpX":
+      case "6K8APhH2j4o":
         Script11();
         break;
-      case "6DyI5Z9vVsA":
+      case "6rKyIMp6yQv":
         Script12();
         break;
-      case "5uaXzRzFNaB":
+      case "5w7KQFZZmfe":
         Script13();
         break;
-      case "6o3aNK2Uwhy":
+      case "6Z3MnAEeqOL":
         Script14();
         break;
-      case "5moDehzU358":
+      case "5h1BGdxi8Dy":
         Script15();
         break;
-      case "6TJLE4kErVw":
+      case "5tGLqnFAY92":
         Script16();
         break;
-      case "64i2ev9N4ti":
+      case "6j1T0LlWZgy":
         Script17();
         break;
-      case "6PJL1j9H8YC":
+      case "5vvtwYLqTER":
         Script18();
         break;
-      case "5pOm3vuQaMd":
+      case "5tHXSaPSqWB":
         Script19();
         break;
-      case "6imntL5izpx":
+      case "6bWmIfMkbys":
         Script20();
         break;
-      case "5XAgdp17XNC":
+      case "63744bQaveh":
         Script21();
         break;
-      case "5uvloDvFnEs":
+      case "6hcttY6514s":
         Script22();
         break;
-      case "5uhc3M5QeGg":
+      case "6Ar837Sr1Lq":
         Script23();
         break;
   }
@@ -145,12 +145,12 @@ window.getRespuestaMultiple(cod_actividad, cod_actividad+"D02", "texto2", 2);
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D03", "texto3", 1);
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D03", "texto4", 2);
 
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D04", "multi1", 1);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D04", "multi2", 2);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D04", "multi3", 3);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D04", "multi4", 4);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D04", "multi5", 5);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D04", "multi6", 6);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D05", "multi1", 1);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D05", "multi2", 2);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D05", "multi3", 3);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D05", "multi4", 4);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D05", "multi5", 5);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D05", "multi6", 6);
 
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "texto5", 1);
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "texto6", 2);
