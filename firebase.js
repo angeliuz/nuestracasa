@@ -238,12 +238,12 @@ export const getRespuesta = async (cod_actividad, cod_diapositiva) => {
 
 //             localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
 //             localStorage.setItem(cod_diapositiva + "_"+nameVar+idRespuesta, doc.data().respuesta[idRespuesta - 1]);
-            
+
 //             window.player.SetVar("respuesta_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
 //             window.player.SetVar(nameVar + idRespuesta, localStorage.getItem(cod_diapositiva+"_"+nameVar+idRespuesta));
 
 //             // window.player.SetVar("drag_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
-            
+
 //             //window.player.SetVar("respuesta_" + indiceVariable, "hola, chao, hola2");
 
 //             console.log("Get Respuesta:", doc.data().respuesta[idRespuesta - 1]);
@@ -267,17 +267,17 @@ export const getRespuestaMultiple = async (cod_actividad, cod_diapositiva, nameV
             let indiceVariable = cod_diapositiva.slice(-2);
 
             localStorage.setItem(cod_diapositiva + "_respuesta", respuesta);
-            localStorage.setItem(cod_diapositiva + "_"+nameVar, doc.data().respuesta[indice - 1]);
-            
+            localStorage.setItem(cod_diapositiva + "_" + nameVar, doc.data().respuesta[indice - 1]);
+
             window.player.SetVar("respuesta_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
-            window.player.SetVar(nameVar, localStorage.getItem(cod_diapositiva+"_"+nameVar));
+            window.player.SetVar(nameVar, localStorage.getItem(cod_diapositiva + "_" + nameVar));
 
             // window.player.SetVar("drag_" + indiceVariable, localStorage.getItem(cod_diapositiva + "_respuesta"));
-            
+
             //window.player.SetVar("respuesta_" + indiceVariable, "hola, chao, hola2");
 
             console.log("Get Respuesta:", doc.data().respuesta[indice - 1]);
-            console.log("Get Respuesta LS:", localStorage.getItem(cod_diapositiva + "_"+nameVar));
+            console.log("Get Respuesta LS:", localStorage.getItem(cod_diapositiva + "_" + nameVar));
 
             return doc.data().respuesta[indice - 1];
         }
@@ -305,7 +305,7 @@ export const getTotal = async (cod_actividad, totalDiapos) => {
 
     for (let i = 0; i <= totalDiapos.length; i++) {
         if (i < 15) {
-            sumaLogros += Number(localStorage.getItem(cod_actividad + totalDiapos[i]+ "_logro"));
+            sumaLogros += Number(localStorage.getItem(cod_actividad + totalDiapos[i] + "_logro"));
             console.log("getTotal: sumaLogros menor de 10: ", sumaLogros);
             console.log("getTotal: indice Diapo: ", totalDiapos[i]);
         }
@@ -331,5 +331,21 @@ const getUserIdConecta = () => {
     var str = localStorage.getItem('mm_data');
     var arregloData = new Array();
     arregloData = str.split(",");
-    return arregloData[3];
+
+    console.log("TIPO DE USUARIO:", arregloData[2])
+
+    if (arregloData[2] == "Profesor") {
+        var str_alumno = localStorage.getItem('smc_data');
+        var arregloData_alumno = new Array();
+        arregloData_alumno = str_alumno.split(",");
+        return arregloData_alumno[2];
+        console.log("TIPO DE USUARIO:", arregloData[2])
+
+    } else {
+        return arregloData[3];
+    }
+
+
+
+
 }
