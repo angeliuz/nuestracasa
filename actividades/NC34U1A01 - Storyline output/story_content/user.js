@@ -2,86 +2,101 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6XrxJh04EMj":
+      case "5mVSHp2dFD2":
         Script1();
         break;
-      case "6IobrGFjZ0Z":
+      case "6ejFxY0Rpzv":
         Script2();
         break;
-      case "6ochf6a0Goh":
+      case "6K2sPfC3CrT":
         Script3();
         break;
-      case "5efJVYMsj9V":
+      case "6JaEKq13cyR":
         Script4();
         break;
-      case "6OGOXlPY994":
+      case "5cxzCETAlHG":
         Script5();
         break;
-      case "6AHRHFjDCu4":
+      case "69qqgpeO8Gb":
         Script6();
         break;
-      case "5hqSqGeOWQ9":
+      case "6h2X7Lfteug":
         Script7();
         break;
-      case "5dn9OzgDSy2":
+      case "6gFSyiihCF7":
         Script8();
         break;
-      case "645tredvAo9":
+      case "6AE6iX3w6j8":
         Script9();
         break;
-      case "6qNnmL0ZmGh":
+      case "6pJ0karMh1Q":
         Script10();
         break;
-      case "5sHzGjen4Fo":
+      case "6RJ0wHMjHye":
         Script11();
         break;
-      case "5VuHCSTQE1R":
+      case "6TDZuCLgzGb":
         Script12();
         break;
-      case "5W7KFxfffAy":
+      case "6jwCg9RsbJW":
         Script13();
         break;
-      case "5sUHG6FJeSZ":
+      case "6UOpfDrquoo":
         Script14();
         break;
-      case "69qd0OmbuE2":
+      case "5awf4tPlpBQ":
         Script15();
         break;
-      case "5vwOApOLJRg":
+      case "5mFAsbIeJyZ":
         Script16();
         break;
-      case "6NTsZKAEbRV":
+      case "5W8FAUBrutW":
         Script17();
         break;
-      case "67plWkjX6Ga":
+      case "6d9i4zQWjNI":
         Script18();
         break;
-      case "6RwOKiBNHEt":
+      case "5VM3c4gKHde":
         Script19();
         break;
-      case "6L2UWkKilt1":
+      case "5pna8tj5Ofr":
         Script20();
         break;
-      case "6KDehYaAL7V":
+      case "5wV4T0tAYl5":
         Script21();
         break;
-      case "6q3unrJQJ0q":
+      case "5sSXvMb7SbK":
         Script22();
         break;
-      case "6aTOC8gHvt7":
+      case "6GpiE5fgCXt":
         Script23();
         break;
-      case "65edNhiHqnz":
+      case "5zJ9drkJZRs":
         Script24();
         break;
-      case "5i7OR6Cj2S1":
+      case "6BuM0FteRtT":
         Script25();
         break;
-      case "5lc43FLe0J9":
+      case "62bQW61viH7":
         Script26();
         break;
-      case "6nfio2fuPYr":
+      case "5dSB8BdjY6W":
         Script27();
+        break;
+      case "5uPF6BB8dEf":
+        Script28();
+        break;
+      case "6OgC9IaNRAU":
+        Script29();
+        break;
+      case "6bZ9abQjCjA":
+        Script30();
+        break;
+      case "5V8MCKp1tTk":
+        Script31();
+        break;
+      case "6KvbBc70qAd":
+        Script32();
         break;
   }
 }
@@ -105,6 +120,9 @@ window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D09");
 window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D10");
 window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D11");
 window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D12");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D13");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D14");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D15");
 
 window.getCodigoDiapositiva(cod_actividad, cod_diapositiva);
 window.getIntentos(cod_actividad, cod_diapositiva);
@@ -129,6 +147,9 @@ var respuesta_09 = window.getRespuesta(cod_actividad, cod_actividad+"D09");
 var respuesta_10 = window.getRespuesta(cod_actividad, cod_actividad+"D10");
 var respuesta_11 = window.getRespuesta(cod_actividad, cod_actividad+"D11");
 var respuesta_12 = window.getRespuesta(cod_actividad, cod_actividad+"D12");
+var respuesta_13 = window.getRespuesta(cod_actividad, cod_actividad+"D13");
+var respuesta_14 = window.getRespuesta(cod_actividad, cod_actividad+"D14");
+var respuesta_15 = window.getRespuesta(cod_actividad, cod_actividad+"D15");
 
 var solucion_01 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D01");
 var solucion_02 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D02");
@@ -142,6 +163,9 @@ var solucion_09 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D09
 var solucion_10 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D10");
 var solucion_11 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D11");
 var solucion_12 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D12");
+var solucion_13 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D13");
+var solucion_14 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D14");
+var solucion_15 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D15");
 
 var intento_01 = window.getIntentos(cod_actividad, cod_actividad+"D01");
 var intento_02 = window.getIntentos(cod_actividad, cod_actividad+"D02");
@@ -155,6 +179,9 @@ var intento_09 = window.getIntentos(cod_actividad, cod_actividad+"D09");
 var intento_10 = window.getIntentos(cod_actividad, cod_actividad+"D10");
 var intento_11 = window.getIntentos(cod_actividad, cod_actividad+"D11");
 var intento_12 = window.getIntentos(cod_actividad, cod_actividad+"D12");
+var intento_13 = window.getIntentos(cod_actividad, cod_actividad+"D13");
+var intento_14 = window.getIntentos(cod_actividad, cod_actividad+"D14");
+var intento_15 = window.getIntentos(cod_actividad, cod_actividad+"D15");
 
 var logro_01 = window.getLogro(cod_actividad, cod_actividad+"D01");
 var logro_02 = window.getLogro(cod_actividad, cod_actividad+"D02");
@@ -168,6 +195,13 @@ var logro_09 = window.getLogro(cod_actividad, cod_actividad+"D09");
 var logro_10 = window.getLogro(cod_actividad, cod_actividad+"D10");
 var logro_11 = window.getLogro(cod_actividad, cod_actividad+"D11");
 var logro_12 = window.getLogro(cod_actividad, cod_actividad+"D12");
+var logro_13 = window.getLogro(cod_actividad, cod_actividad+"D13");
+var logro_14 = window.getLogro(cod_actividad, cod_actividad+"D14");
+var logro_15 = window.getLogro(cod_actividad, cod_actividad+"D15");
+
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D15", "texto1", 1);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D15", "texto2", 2);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D15", "texto3", 3);
 
 console.log("trae info guardada en BD");
 }
@@ -175,38 +209,15 @@ console.log("trae info guardada en BD");
 function Script3()
 {
   var p = GetPlayer();
-player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var logro = p.GetVar("logro");
-var respuesta = p.GetVar("respuesta");
-var respuesta_01 = p.GetVar("respuesta_01");
 
-if (respuesta != respuesta_01) {
-  console.log("no es igual");
-  window.setIntentos(cod_actividad, cod_diapositiva);
-  window.setLogro(cod_actividad, cod_diapositiva, logro);
-  window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
-} else {
-  console.log("es igual");
-}
+window.setEstadoSolucionario(cod_actividad, cod_diapositiva)
 
-console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
+console.log("estado solucionario: ",window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
 function Script4()
-{
-  var p = GetPlayer();
-player = GetPlayer();
-var cod_actividad = p.GetVar("cod_actividad");
-var cod_diapositiva = p.GetVar("cod_diapositiva");
-
-window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
-
-console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
-}
-
-function Script5()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -228,7 +239,7 @@ if (respuesta != respuesta_02) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script6()
+function Script5()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -240,7 +251,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script7()
+function Script6()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -262,7 +273,7 @@ if (respuesta != respuesta_03) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script8()
+function Script7()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -274,7 +285,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script9()
+function Script8()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -296,7 +307,7 @@ if (respuesta != respuesta_04) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script10()
+function Script9()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -308,7 +319,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script11()
+function Script10()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -330,7 +341,7 @@ if (respuesta != respuesta_05) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script12()
+function Script11()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -342,7 +353,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script13()
+function Script12()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -364,7 +375,7 @@ if (respuesta != respuesta_06) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script14()
+function Script13()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -376,7 +387,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script15()
+function Script14()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -398,7 +409,7 @@ if (respuesta != respuesta_07) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script16()
+function Script15()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -410,7 +421,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script17()
+function Script16()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -432,7 +443,7 @@ if (respuesta != respuesta_08) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script18()
+function Script17()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -444,7 +455,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script19()
+function Script18()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -466,7 +477,7 @@ if (respuesta != respuesta_09) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script20()
+function Script19()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -478,7 +489,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script21()
+function Script20()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -500,7 +511,7 @@ if (respuesta != respuesta_10) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script22()
+function Script21()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -512,7 +523,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script23()
+function Script22()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -534,7 +545,7 @@ if (respuesta != respuesta_11) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script24()
+function Script23()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -546,7 +557,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script25()
+function Script24()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -568,7 +579,7 @@ if (respuesta != respuesta_12) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script26()
+function Script25()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -580,7 +591,102 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
+function Script26()
+{
+  var p = GetPlayer();
+player = GetPlayer();
+var cod_actividad = p.GetVar("cod_actividad");
+var cod_diapositiva = p.GetVar("cod_diapositiva");
+var logro = p.GetVar("logro");
+var respuesta = p.GetVar("respuesta");
+var respuesta_13 = p.GetVar("respuesta_13");
+
+if (respuesta != respuesta_13) {
+  console.log("no es igual");
+  window.setIntentos(cod_actividad, cod_diapositiva);
+  window.setLogro(cod_actividad, cod_diapositiva, logro);
+  window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+} else {
+  console.log("es igual");
+}
+
+console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
+}
+
 function Script27()
+{
+  var p = GetPlayer();
+player = GetPlayer();
+var cod_actividad = p.GetVar("cod_actividad");
+var cod_diapositiva = p.GetVar("cod_diapositiva");
+
+window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
+
+console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
+}
+
+function Script28()
+{
+  var p = GetPlayer();
+var cod_actividad = p.GetVar("cod_actividad");
+var cod_diapositiva = p.GetVar("cod_diapositiva");
+
+window.setEstadoSolucionario(cod_actividad, cod_diapositiva)
+
+console.log("estado solucionario: ",window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
+}
+
+function Script29()
+{
+  var p = GetPlayer();
+player = GetPlayer();
+var cod_actividad = p.GetVar("cod_actividad");
+var cod_diapositiva = p.GetVar("cod_diapositiva");
+
+var texto3 = localStorage.getItem(cod_diapositiva + "_texto3");
+var texto4 = localStorage.getItem(cod_diapositiva + "_texto4");
+var texto5 = localStorage.getItem(cod_diapositiva + "_texto5");
+
+console.log(texto1,texto2,texto3);
+}
+
+function Script30()
+{
+  var p = GetPlayer();
+player = GetPlayer();
+var cod_actividad = p.GetVar("cod_actividad");
+var cod_diapositiva = p.GetVar("cod_diapositiva");
+var texto1 = p.GetVar("texto1");
+var texto2 = p.GetVar("texto2");
+var texto3 = p.GetVar("texto3");
+var respuesta = [texto1,texto2,texto3];
+var respuesta_15 = p.GetVar("respuesta_15");
+
+if (respuesta != respuesta_15) {
+  console.log("no es igual");
+  window.setIntentos(cod_actividad, cod_diapositiva);
+  //window.setLogro(cod_actividad, cod_diapositiva, logro);
+  window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
+} else {
+  console.log("es igual");
+}
+
+console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
+}
+
+function Script31()
+{
+  var p = GetPlayer();
+player = GetPlayer();
+var cod_actividad = p.GetVar("cod_actividad");
+var cod_diapositiva = p.GetVar("cod_diapositiva");
+
+window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
+
+console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
+}
+
+function Script32()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -599,6 +705,9 @@ var respuesta_09 = window.getRespuesta(cod_actividad, cod_actividad+"D09");
 var respuesta_10 = window.getRespuesta(cod_actividad, cod_actividad+"D10");
 var respuesta_11 = window.getRespuesta(cod_actividad, cod_actividad+"D11");
 var respuesta_12 = window.getRespuesta(cod_actividad, cod_actividad+"D12");
+var respuesta_13 = window.getRespuesta(cod_actividad, cod_actividad+"D13");
+var respuesta_14 = window.getRespuesta(cod_actividad, cod_actividad+"D14");
+var respuesta_15 = window.getRespuesta(cod_actividad, cod_actividad+"D15");
 
 var solucion_01 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D01");
 var solucion_02 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D02");
@@ -612,6 +721,9 @@ var solucion_09 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D09
 var solucion_10 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D10");
 var solucion_11 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D11");
 var solucion_12 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D12");
+var solucion_13 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D13");
+var solucion_14 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D14");
+var solucion_15 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D15");
 
 var intento_01 = window.getIntentos(cod_actividad, cod_actividad+"D01");
 var intento_02 = window.getIntentos(cod_actividad, cod_actividad+"D02");
@@ -625,6 +737,9 @@ var intento_09 = window.getIntentos(cod_actividad, cod_actividad+"D09");
 var intento_10 = window.getIntentos(cod_actividad, cod_actividad+"D10");
 var intento_11 = window.getIntentos(cod_actividad, cod_actividad+"D11");
 var intento_12 = window.getIntentos(cod_actividad, cod_actividad+"D12");
+var intento_13 = window.getIntentos(cod_actividad, cod_actividad+"D13");
+var intento_14 = window.getIntentos(cod_actividad, cod_actividad+"D14");
+var intento_15 = window.getIntentos(cod_actividad, cod_actividad+"D15");
 
 var logro_01 = window.getLogro(cod_actividad, cod_actividad+"D01");
 var logro_02 = window.getLogro(cod_actividad, cod_actividad+"D02");
@@ -638,8 +753,11 @@ var logro_09 = window.getLogro(cod_actividad, cod_actividad+"D09");
 var logro_10 = window.getLogro(cod_actividad, cod_actividad+"D10");
 var logro_11 = window.getLogro(cod_actividad, cod_actividad+"D11");
 var logro_12 = window.getLogro(cod_actividad, cod_actividad+"D12");
+var logro_13 = window.getLogro(cod_actividad, cod_actividad+"D13");
+var logro_14 = window.getLogro(cod_actividad, cod_actividad+"D14");
+var logro_15 = window.getLogro(cod_actividad, cod_actividad+"D15");
 
-var arrDiapos = ["D01","D02","D03","D04","D05","D06","D07","D08","D09","D10","D11","D12"];
+var arrDiapos = ["D02","D03","D04","D05","D06","D07","D08","D09","D10","D11","D12","D13"];
 
 window.getTotal(cod_actividad,arrDiapos);
 }
