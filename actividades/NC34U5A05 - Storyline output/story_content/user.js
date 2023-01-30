@@ -2,91 +2,91 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6ormDw0gS4h":
+      case "6f1yeDrDyse":
         Script1();
         break;
-      case "5YePzKpu2mq":
+      case "5wdapQRRWI0":
         Script2();
         break;
-      case "5oyN3v8B9Nd":
+      case "6HVcR3hLc7V":
         Script3();
         break;
-      case "5lFNcgx790f":
+      case "6ij8ZxMUIrZ":
         Script4();
         break;
-      case "5gWCQ5B9GCR":
+      case "6do8EMAiUWb":
         Script5();
         break;
-      case "6hUTf8FwFfU":
+      case "6bu5RN9pfbp":
         Script6();
         break;
-      case "5VxWSDuuq7W":
+      case "6ioiqibm2RJ":
         Script7();
         break;
-      case "63nwa0XAubD":
+      case "6L9o4fS8Vw4":
         Script8();
         break;
-      case "6YVUFchHuHh":
+      case "5mLNtUDnLRy":
         Script9();
         break;
-      case "60bjSYesP0G":
+      case "5suzIbBR7XE":
         Script10();
         break;
-      case "6CnvirINGIS":
+      case "67pK81e8KjA":
         Script11();
         break;
-      case "5ojwNYb9l7G":
+      case "5vp35TqiCWg":
         Script12();
         break;
-      case "5w6XNezzYD8":
+      case "5brDzjCWWR7":
         Script13();
         break;
-      case "6P0uLDl49Hc":
+      case "5VQxse4gynw":
         Script14();
         break;
-      case "5uGJZf2GUos":
+      case "6atfyaK0BOC":
         Script15();
         break;
-      case "6fs7xwrBeWG":
+      case "6WYhzeoNNIf":
         Script16();
         break;
-      case "6gty79fFTp9":
+      case "6UYBMdD53zS":
         Script17();
         break;
-      case "61u9tl8ZwTT":
+      case "6fLB1id2hc2":
         Script18();
         break;
-      case "5ZoK9dZzF7k":
+      case "6gM2XPLFnpE":
         Script19();
         break;
-      case "5g9cPdAsEZQ":
+      case "6L82HlxgnP1":
         Script20();
         break;
-      case "5xYFNpyRTjE":
+      case "6LO95P5x8SF":
         Script21();
         break;
-      case "6etki8KyfAo":
+      case "6HF2THbN2d0":
         Script22();
         break;
-      case "64bnS6m0iOj":
+      case "5Y5YIyZQaGE":
         Script23();
         break;
-      case "5wQTkGLmZ1e":
+      case "5kwO6PiscGp":
         Script24();
         break;
-      case "62EndceEJxp":
+      case "6682SV43wAG":
         Script25();
         break;
-      case "5qXeM1ReqiB":
+      case "5e8MHBwXNEF":
         Script26();
         break;
-      case "65YYMjb8JFz":
+      case "6e5jPsz9Iqp":
         Script27();
         break;
-      case "68ZxvNhvFkP":
+      case "6kGwF7bAAmT":
         Script28();
         break;
-      case "6lBn0mASGWN":
+      case "6ZLlN5K3hQ5":
         Script29();
         break;
   }
@@ -668,6 +668,7 @@ var respuesta_07 = window.getRespuesta(cod_actividad, cod_actividad+"D07");
 var respuesta_08 = window.getRespuesta(cod_actividad, cod_actividad+"D08");
 var respuesta_09 = window.getRespuesta(cod_actividad, cod_actividad+"D09");
 var respuesta_10 = window.getRespuesta(cod_actividad, cod_actividad+"D10");
+var respuesta_10 = window.getRespuesta(cod_actividad, cod_actividad+"D11");
 
 var solucion_01 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D01");
 var solucion_02 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D02");
@@ -679,6 +680,7 @@ var solucion_07 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D07
 var solucion_08 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D08");
 var solucion_09 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D09");
 var solucion_10 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D10");
+var solucion_10 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D11");
 
 var intento_01 = window.getIntentos(cod_actividad, cod_actividad+"D01");
 var intento_02 = window.getIntentos(cod_actividad, cod_actividad+"D02");
@@ -690,6 +692,7 @@ var intento_07 = window.getIntentos(cod_actividad, cod_actividad+"D07");
 var intento_08 = window.getIntentos(cod_actividad, cod_actividad+"D08");
 var intento_09 = window.getIntentos(cod_actividad, cod_actividad+"D09");
 var intento_10 = window.getIntentos(cod_actividad, cod_actividad+"D10");
+var intento_10 = window.getIntentos(cod_actividad, cod_actividad+"D11");
 
 var logro_01 = window.getLogro(cod_actividad, cod_actividad+"D01");
 var logro_02 = window.getLogro(cod_actividad, cod_actividad+"D02");
@@ -701,6 +704,7 @@ var logro_07 = window.getLogro(cod_actividad, cod_actividad+"D07");
 var logro_08 = window.getLogro(cod_actividad, cod_actividad+"D08");
 var logro_09 = window.getLogro(cod_actividad, cod_actividad+"D09");
 var logro_10 = window.getLogro(cod_actividad, cod_actividad+"D10");
+var logro_10 = window.getLogro(cod_actividad, cod_actividad+"D11");
 
 
 var arrDiapos = ["D01","D02","D03","D04","D05","D06"];
