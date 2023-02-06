@@ -2,35 +2,38 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "661UgDI2yLr":
+      case "5iPXJQqB2OD":
         Script1();
         break;
-      case "5h64OrtrS64":
+      case "5cQqCGweJe9":
         Script2();
         break;
-      case "6hxNvAotKMg":
+      case "5kJTOVCRNQW":
         Script3();
         break;
-      case "5tP5vOKS8wc":
+      case "67Our9c6UAs":
         Script4();
         break;
-      case "6PesKWFQPUR":
+      case "5Yu3deDUaqt":
         Script5();
         break;
-      case "6D1YTpJ8sIJ":
+      case "6KP3crTBmVe":
         Script6();
         break;
-      case "5g35Chlo2hW":
+      case "6nbFYRkch4X":
         Script7();
         break;
-      case "5mnN2RHgFr0":
+      case "5pn4WFKf95g":
         Script8();
         break;
-      case "68pKJ3hA7K8":
+      case "5zvqYX6RwWY":
         Script9();
         break;
-      case "6LFCQ6lag9b":
+      case "5zRpxNB2lgl":
         Script10();
+        break;
+      case "5sr1VTXrbe9":
+        Script11();
         break;
   }
 }
@@ -163,6 +166,16 @@ function Script6()
 {
   var p = GetPlayer();
 player = GetPlayer();
+
+var texto9 = texto1+texto2+texto3+texto4+texto5+texto6+texto7+texto8;
+
+console.log("hola");
+}
+
+function Script7()
+{
+  var p = GetPlayer();
+player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -171,7 +184,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script7()
+function Script8()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -187,7 +200,7 @@ var drag5 = localStorage.getItem(cod_diapositiva + "_drag5");
 console.log(drag1,drag2,drag3,drag4,drag5);
 }
 
-function Script8()
+function Script9()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -214,7 +227,7 @@ if (respuesta != respuesta_02) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script9()
+function Script10()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -226,7 +239,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script10()
+function Script11()
 {
   var p = GetPlayer();
 player = GetPlayer();
