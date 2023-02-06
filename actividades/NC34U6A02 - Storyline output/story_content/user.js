@@ -2,88 +2,88 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5i6JkNxPJAH":
+      case "6glwyfaV8ni":
         Script1();
         break;
-      case "6TirVf4v7bc":
+      case "6ljVFXFl3uA":
         Script2();
         break;
-      case "5pVlGJnz7fL":
+      case "638VbCvKRQp":
         Script3();
         break;
-      case "6bTmdOvIEkk":
+      case "5x5CBkqwnVd":
         Script4();
         break;
-      case "69gUu39yqDT":
+      case "5l6lO162hLZ":
         Script5();
         break;
-      case "6TuIkeXSHcI":
+      case "6EkGYOyVT0E":
         Script6();
         break;
-      case "6GCAYgoJ9hb":
+      case "6PijodaL8V0":
         Script7();
         break;
-      case "5imy0fVgHXm":
+      case "6Z72MYmlfjs":
         Script8();
         break;
-      case "6Bfdp2AmhcP":
+      case "5gjHIXWxOlM":
         Script9();
         break;
-      case "5qpqEl1Bj4W":
+      case "6abgGsnNQW6":
         Script10();
         break;
-      case "5gDvJ9BR9RL":
+      case "6rSJNhi0rsc":
         Script11();
         break;
-      case "6OHZMJ5wqv7":
+      case "5jzMSAt1qSB":
         Script12();
         break;
-      case "6gCYjNd9KlI":
+      case "6jlCcRV8V2l":
         Script13();
         break;
-      case "6WwVLsnNnb7":
+      case "6HELqfASdUD":
         Script14();
         break;
-      case "6Ps3ElyzBqa":
+      case "69DMJxVa7q6":
         Script15();
         break;
-      case "6fFBaQDko41":
+      case "6lNFiockhJ9":
         Script16();
         break;
-      case "5m0fyU1EekD":
+      case "5wd3MJ0w6Kv":
         Script17();
         break;
-      case "6d4rTzcva5h":
+      case "6ev64eKnB4X":
         Script18();
         break;
-      case "6oRHSVF8G9o":
+      case "6XpiVD7V2rN":
         Script19();
         break;
-      case "67aj89EP1E2":
+      case "6QkAINN9ips":
         Script20();
         break;
-      case "6QATBbYQ4Nl":
+      case "5u4AI4jNGXW":
         Script21();
         break;
-      case "6IP8j5bgfMb":
+      case "5wq0slalL8O":
         Script22();
         break;
-      case "6afdtPT5V3m":
+      case "6PINzswc9L0":
         Script23();
         break;
-      case "67WwaOHJcWW":
+      case "5hfOmoUUQBS":
         Script24();
         break;
-      case "6cBXVslOKFN":
+      case "5nWdsxTIylP":
         Script25();
         break;
-      case "6YVo2VEd3JF":
+      case "5iHHNe9qcVk":
         Script26();
         break;
-      case "6n6LSEpzEc8":
+      case "6FjgpLCqjRI":
         Script27();
         break;
-      case "6itPQuuaOP8":
+      case "6T0DPboEkIC":
         Script28();
         break;
   }
@@ -174,6 +174,23 @@ var logro_10 = window.getLogro(cod_actividad, cod_actividad+"D10");
 var logro_11 = window.getLogro(cod_actividad, cod_actividad+"D11");
 var logro_12 = window.getLogro(cod_actividad, cod_actividad+"D12");
 
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D01", "texto1", 1);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D01", "texto2", 2);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D02", "texto3", 3);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D02", "texto4", 4);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D12", "texto5", 5);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D12", "texto6", 6);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D12", "texto7", 7);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D12", "texto8", 8);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D12", "texto9", 9);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D12", "texto10", 10);
+
+
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D11", "multi1", 1);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D11", "multi2", 2);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D11", "multi3", 3);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D11", "multi4", 4);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D11", "multi5", 5);
 console.log("trae info guardada en BD");
 }
 
@@ -183,20 +200,23 @@ function Script3()
 player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var logro = p.GetVar("logro");
-var respuesta = p.GetVar("respuesta");
+var texto1 = p.GetVar("texto1");
+var texto2 = p.GetVar("texto2");
+
+var respuesta = [texto1,texto2];
 var respuesta_01 = p.GetVar("respuesta_01");
 
 if (respuesta != respuesta_01) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
-  window.setLogro(cod_actividad, cod_diapositiva, logro);
+  //window.setLogro(cod_actividad, cod_diapositiva, logro);
   window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
 } else {
   console.log("es igual");
 }
 
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
+
 }
 
 function Script4()
@@ -217,20 +237,23 @@ function Script5()
 player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var logro = p.GetVar("logro");
-var respuesta = p.GetVar("respuesta");
+var texto3 = p.GetVar("texto3");
+var texto4 = p.GetVar("texto4");
+
+var respuesta = [texto3,texto4];
 var respuesta_02 = p.GetVar("respuesta_02");
 
 if (respuesta != respuesta_02) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
-  window.setLogro(cod_actividad, cod_diapositiva, logro);
+  //window.setLogro(cod_actividad, cod_diapositiva, logro);
   window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
 } else {
   console.log("es igual");
 }
 
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
+
 }
 
 function Script6()
@@ -531,7 +554,7 @@ var multi4 = localStorage.getItem(cod_diapositiva + "_multi4");
 var multi5 = localStorage.getItem(cod_diapositiva + "_multi5");
 
 
-console.log(multi1,multi2,multi3,multi4,multi5,);
+console.log(multi1,multi2,multi3,multi4,multi5);
 }
 
 function Script24()
@@ -578,20 +601,30 @@ function Script26()
 player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
-var logro = p.GetVar("logro");
-var respuesta = p.GetVar("respuesta");
+var texto1 = p.GetVar("texto1");
+var texto2 = p.GetVar("texto2");
+var texto3 = p.GetVar("texto3");
+var texto4 = p.GetVar("texto4");
+var texto5 = p.GetVar("texto5");
+var texto6 = p.GetVar("texto6");
+var texto7 = p.GetVar("texto7");
+var texto8 = p.GetVar("texto8");
+var texto9 = p.GetVar("texto9");
+var texto10 = p.GetVar("texto10");
+var respuesta = [texto1,texto2,texto3,texto4,texto5,texto6,texto7,texto8,texto9,texto10];
 var respuesta_12 = p.GetVar("respuesta_12");
 
 if (respuesta != respuesta_12) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
-  window.setLogro(cod_actividad, cod_diapositiva, logro);
+  //window.setLogro(cod_actividad, cod_diapositiva, logro);
   window.setRespuesta(cod_actividad, cod_diapositiva, respuesta);
 } else {
   console.log("es igual");
 }
 
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
+
 }
 
 function Script27()
