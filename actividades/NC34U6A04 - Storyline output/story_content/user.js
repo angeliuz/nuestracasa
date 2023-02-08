@@ -2,43 +2,43 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6mZBI5K5vmP":
+      case "67gYcbOOQa6":
         Script1();
         break;
-      case "5riGxmrg3ij":
+      case "5coekw4ekyH":
         Script2();
         break;
-      case "5rsIszpkRZO":
+      case "6opTSjd5Yb9":
         Script3();
         break;
-      case "6W7ZQ1BjCgt":
+      case "6jfxYlIY8Pv":
         Script4();
         break;
-      case "68K2FkHcQIO":
+      case "5WchHATN2NP":
         Script5();
         break;
-      case "5l30X5N6a1n":
+      case "6oicWCwIiYg":
         Script6();
         break;
-      case "5tSOCAA5Zgd":
+      case "5qzM5nY3Pf5":
         Script7();
         break;
-      case "6m7RNoWvGzJ":
+      case "5s6mOzOzwHX":
         Script8();
         break;
-      case "5kjCqtrM83e":
+      case "6BBe6ewGpFv":
         Script9();
         break;
-      case "5yci3a0ByUu":
+      case "6YtyaipIVUu":
         Script10();
         break;
-      case "5Xo2CdkjzpK":
+      case "6QkkDto6PST":
         Script11();
         break;
-      case "6ViuZKBO52G":
+      case "5jHas1yCzPd":
         Script12();
         break;
-      case "5teEvF622b6":
+      case "5keaLBpNeHe":
         Script13();
         break;
   }
@@ -119,7 +119,7 @@ var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var texto1 = p.GetVar("texto1");
 var texto2 = p.GetVar("texto2");
-var texto2 = p.GetVar("texto3");
+var texto3 = p.GetVar("texto3");
 
 var respuesta = [texto1,texto2,texto3];
 var respuesta_01 = p.GetVar("respuesta_01");
