@@ -2,38 +2,35 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5iPXJQqB2OD":
+      case "6Ss6DfOaT2g":
         Script1();
         break;
-      case "5cQqCGweJe9":
+      case "6Jm2UbGacC2":
         Script2();
         break;
-      case "5kJTOVCRNQW":
+      case "5aHQkWioMVg":
         Script3();
         break;
-      case "67Our9c6UAs":
+      case "6bru9JUo29R":
         Script4();
         break;
-      case "5Yu3deDUaqt":
+      case "5cAZmKKHbp5":
         Script5();
         break;
-      case "6KP3crTBmVe":
+      case "68aawhYQGRs":
         Script6();
         break;
-      case "6nbFYRkch4X":
+      case "5lfICWWTopm":
         Script7();
         break;
-      case "5pn4WFKf95g":
+      case "5o8KsPscNkD":
         Script8();
         break;
-      case "5zvqYX6RwWY":
+      case "5X1Ts2YXaUd":
         Script9();
         break;
-      case "5zRpxNB2lgl":
+      case "5Xn9HdNuggX":
         Script10();
-        break;
-      case "5sr1VTXrbe9":
-        Script11();
         break;
   }
 }
@@ -106,16 +103,6 @@ function Script3()
 {
   var p = GetPlayer();
 player = GetPlayer();
-
-var texto9 = texto1+texto2+texto3+texto4+texto5+texto6+texto7+texto8;
-
-console.log(texto9);
-}
-
-function Script4()
-{
-  var p = GetPlayer();
-player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -132,7 +119,7 @@ var texto9 = localStorage.getItem(cod_diapositiva + "_texto9");
 console.log(texto1,texto2,texto3,texto4,texto5,texto6,texto7,texto8,texto9);
 }
 
-function Script5()
+function Script4()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -162,17 +149,26 @@ if (respuesta != respuesta_01) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script6()
+function Script5()
 {
   var p = GetPlayer();
 player = GetPlayer();
+var texto1 = p.GetVar("texto1");
+var texto2 = p.GetVar("texto2");
+var texto3 = p.GetVar("texto3");
+var texto4 = p.GetVar("texto4");
+var texto5 = p.GetVar("texto5");
+var texto6 = p.GetVar("texto6");
+var texto7 = p.GetVar("texto7");
+var texto8 = p.GetVar("texto8");
+var texto9 = (texto1+texto2+texto3+texto4+texto5+texto6+texto7+texto8);
 
-var texto9 = texto1+texto2+texto3+texto4+texto5+texto6+texto7+texto8;
+texto9 = p.SetVar("texto9");
 
-console.log("hola");
+console.log(texto9);
 }
 
-function Script7()
+function Script6()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -184,7 +180,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script8()
+function Script7()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -200,7 +196,7 @@ var drag5 = localStorage.getItem(cod_diapositiva + "_drag5");
 console.log(drag1,drag2,drag3,drag4,drag5);
 }
 
-function Script9()
+function Script8()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -227,7 +223,7 @@ if (respuesta != respuesta_02) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script10()
+function Script9()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -239,7 +235,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script11()
+function Script10()
 {
   var p = GetPlayer();
 player = GetPlayer();
