@@ -339,7 +339,7 @@ const getUserIdConecta = () => {
         var arregloData_alumno = new Array();
         arregloData_alumno = str_alumno.split(",");
         window.player.SetVar("profesor" , true);
-        return arregloData_alumno[2];
+        return arregloData_alumno[3];
         console.log("TIPO DE USUARIO:", arregloData[2])
 
     } else {
