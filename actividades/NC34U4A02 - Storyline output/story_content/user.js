@@ -2,31 +2,31 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5sCK8agI3mf":
+      case "6G2nkzPZLrG":
         Script1();
         break;
-      case "69a8RscH6SK":
+      case "6cysa9vePZu":
         Script2();
         break;
-      case "6QnyWErvTCf":
+      case "6bNGkA17ApK":
         Script3();
         break;
-      case "6DOI8zFJSna":
+      case "612vQYhK3Iv":
         Script4();
         break;
-      case "6Um3DwRCxVm":
+      case "5aEWqTzpz3g":
         Script5();
         break;
-      case "5sRbqqPTPl9":
+      case "6LPQiGQjMIr":
         Script6();
         break;
-      case "6IJT0BRift2":
+      case "5mBG03zDVac":
         Script7();
         break;
-      case "5swtHkKJomy":
+      case "6UbNKUofilf":
         Script8();
         break;
-      case "6Cqu3wqxaoa":
+      case "5tZb5J5Z7Ut":
         Script9();
         break;
   }
@@ -70,14 +70,14 @@ var logro_01 = window.getLogro(cod_actividad, cod_actividad+"D01");
 var logro_02 = window.getLogro(cod_actividad, cod_actividad+"D02");
 
 
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D01", "drag1", 1);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D01", "drag2", 2);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D01", "drag3", 3);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D01", "drag4", 4);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D07", "drag1", 1);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D07", "drag2", 2);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D07", "drag3", 3);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D07", "drag4", 4);
 
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D02", "texto1", 1);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D02", "texto2", 2);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D02", "texto3", 3);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D08", "texto1", 1);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D08", "texto2", 2);
+window.getRespuestaMultiple(cod_actividad, cod_actividad+"D08", "texto3", 3);
 
 
 console.log("trae info guardada en BD");

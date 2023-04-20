@@ -2,35 +2,32 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5vt7N5g4jLB":
+      case "5klwZCmvdfa":
         Script1();
         break;
-      case "6Imc1MNkxhO":
+      case "6pQ41unzpvc":
         Script2();
         break;
-      case "6kpC8rmtUJa":
+      case "5htKM3dZRta":
         Script3();
         break;
-      case "6IsZfqmcE4F":
+      case "5rzd0UqhGLd":
         Script4();
         break;
-      case "649rIddOu2h":
+      case "6m8hvhhxNiz":
         Script5();
         break;
-      case "6bMdTkLwBih":
+      case "6iwa0ukH6jW":
         Script6();
         break;
-      case "6ZN0e6lBfUN":
+      case "5xjZn9Y08vd":
         Script7();
         break;
-      case "61euIYInNUq":
+      case "6lzyaUk69Cg":
         Script8();
         break;
-      case "5ZhP9n6gijv":
+      case "6af6LpAYAE0":
         Script9();
-        break;
-      case "5rcVnM0uYjk":
-        Script10();
         break;
   }
 }
@@ -153,25 +150,6 @@ function Script5()
 {
   var p = GetPlayer();
 player = GetPlayer();
-var texto1 = p.GetVar("texto1");
-var texto2 = p.GetVar("texto2");
-var texto3 = p.GetVar("texto3");
-var texto4 = p.GetVar("texto4");
-var texto5 = p.GetVar("texto5");
-var texto6 = p.GetVar("texto6");
-var texto7 = p.GetVar("texto7");
-var texto8 = p.GetVar("texto8");
-var texto9 = (texto1+texto2+texto3+texto4+texto5+texto6+texto7+texto8);
-
-texto9 = p.SetVar("texto9");
-
-console.log(texto9);
-}
-
-function Script6()
-{
-  var p = GetPlayer();
-player = GetPlayer();
 var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 
@@ -180,7 +158,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script7()
+function Script6()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -196,7 +174,7 @@ var drag5 = localStorage.getItem(cod_diapositiva + "_drag5");
 console.log(drag1,drag2,drag3,drag4,drag5);
 }
 
-function Script8()
+function Script7()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -223,7 +201,7 @@ if (respuesta != respuesta_02) {
 console.log("intentos: ", window.getIntentos(cod_actividad, cod_diapositiva));
 }
 
-function Script9()
+function Script8()
 {
   var p = GetPlayer();
 player = GetPlayer();
@@ -235,7 +213,7 @@ window.setEstadoSolucionario(cod_actividad, cod_diapositiva);
 console.log("estado solucionario: ", window.getEstadoSolucionario(cod_actividad, cod_diapositiva));
 }
 
-function Script10()
+function Script9()
 {
   var p = GetPlayer();
 player = GetPlayer();
