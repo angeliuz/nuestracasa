@@ -2,61 +2,61 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5x8UYkxPETf":
+      case "6e4g5a1CgFu":
         Script1();
         break;
-      case "6KhiPaeaROv":
+      case "6HolvDZ3Hs7":
         Script2();
         break;
-      case "6BjOQOs1HB1":
+      case "6U9jCoPlFQq":
         Script3();
         break;
-      case "6j3BZnnvjcP":
+      case "5nanXirOId0":
         Script4();
         break;
-      case "6m9bsbPAjzP":
+      case "5XnaOVxgYFh":
         Script5();
         break;
-      case "6PFtI9TvrRR":
+      case "65e7adRY5W3":
         Script6();
         break;
-      case "6RzLDNZ6UVW":
+      case "5sn1lCFic1v":
         Script7();
         break;
-      case "6BT865qfHVJ":
+      case "6IE7lsenQv4":
         Script8();
         break;
-      case "6NTojR3vukt":
+      case "6m8Cd9tgDWF":
         Script9();
         break;
-      case "6RFtPIvGIPn":
+      case "5lXlquq8YYz":
         Script10();
         break;
-      case "6V5rDzR9EHg":
+      case "6I40yucJ96d":
         Script11();
         break;
-      case "6Ksa1YzPJ0l":
+      case "5foAuYiIYsk":
         Script12();
         break;
-      case "68H5G2iJkFE":
+      case "5hPnobXn5m0":
         Script13();
         break;
-      case "5e8dSfFdJd6":
+      case "5XY5GzZ2CaR":
         Script14();
         break;
-      case "5zBS9YttYCd":
+      case "6SuaBMCatWp":
         Script15();
         break;
-      case "6b8BvcnvSMR":
+      case "5hE07d9DNWc":
         Script16();
         break;
-      case "6WTPczyAdp0":
+      case "5YXKrK8ZfLv":
         Script17();
         break;
-      case "5oNxnMcl5lR":
+      case "6Pltu2Hz1XP":
         Script18();
         break;
-      case "6GJRn4osQhz":
+      case "62zIL3E9Uxp":
         Script19();
         break;
   }
@@ -71,6 +71,10 @@ var cod_diapositiva = p.GetVar("cod_diapositiva");
 
 window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D01");
 window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D02");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D03");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D04");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D05");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D06");
 
 
 window.getCodigoDiapositiva(cod_actividad, cod_diapositiva);
