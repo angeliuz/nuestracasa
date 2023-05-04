@@ -2,61 +2,61 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6CiPyGGM4lc":
+      case "6LHtaiRmaLg":
         Script1();
         break;
-      case "6LuF1Zm9TQ2":
+      case "5wVCgeDLGVu":
         Script2();
         break;
-      case "5vcI34F8jsQ":
+      case "5uESUrYCrW6":
         Script3();
         break;
-      case "5aNKSCND7x1":
+      case "5mqqWCWtdhY":
         Script4();
         break;
-      case "6BFxJWFh9zY":
+      case "5em8uA2Uj4P":
         Script5();
         break;
-      case "6OiB73DbOdl":
+      case "6bxd8KzbcIW":
         Script6();
         break;
-      case "6SVHSSP4GH9":
+      case "613wFqUT63n":
         Script7();
         break;
-      case "6TVDCjVu1Pr":
+      case "6iWgIGrVL10":
         Script8();
         break;
-      case "67y417efLGB":
+      case "6hMasom4Yv4":
         Script9();
         break;
-      case "5nAQMOpSDnq":
+      case "5WaYneSPhtc":
         Script10();
         break;
-      case "5tAwco4EJry":
+      case "5itIlHW9z6V":
         Script11();
         break;
-      case "68Cu0MIXWBz":
+      case "5cCTiLcFfOc":
         Script12();
         break;
-      case "6EUjLFSmuZ1":
+      case "6TK3QoAxjCG":
         Script13();
         break;
-      case "6X7EuLUKjtd":
+      case "6CAItS2mVos":
         Script14();
         break;
-      case "5d4MrceGt0V":
+      case "5bcRP4pVUvk":
         Script15();
         break;
-      case "5zWIZb3xiUx":
+      case "6Ko94i4QIcd":
         Script16();
         break;
-      case "5ddOC4W9H51":
+      case "6NNdUd8vuHL":
         Script17();
         break;
-      case "6RlOWToKi17":
+      case "5engAUzWPHg":
         Script18();
         break;
-      case "5vgkEbgreAK":
+      case "6M9v9gpyPhm":
         Script19();
         break;
   }
@@ -75,6 +75,7 @@ window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D03");
 window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D04");
 window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D05");
 window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D06");
+window.setCodigoDiapositiva(cod_actividad, cod_actividad+"D07");
 
 
 window.getCodigoDiapositiva(cod_actividad, cod_diapositiva);
@@ -94,6 +95,7 @@ var respuesta_03 = window.getRespuesta(cod_actividad, cod_actividad+"D03");
 var respuesta_04 = window.getRespuesta(cod_actividad, cod_actividad+"D04");
 var respuesta_05 = window.getRespuesta(cod_actividad, cod_actividad+"D05");
 var respuesta_06 = window.getRespuesta(cod_actividad, cod_actividad+"D06");
+var respuesta_07 = window.getRespuesta(cod_actividad, cod_actividad+"D07");
 
 var solucion_01 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D01");
 var solucion_02 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D02");
@@ -101,8 +103,7 @@ var solucion_03 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D03
 var solucion_04 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D04");
 var solucion_05 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D05");
 var solucion_06 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D06");
-
-
+var solucion_07 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D07");
 
 var intento_01 = window.getIntentos(cod_actividad, cod_actividad+"D01");
 var intento_02 = window.getIntentos(cod_actividad, cod_actividad+"D02");
@@ -110,7 +111,7 @@ var intento_03 = window.getIntentos(cod_actividad, cod_actividad+"D03");
 var intento_04 = window.getIntentos(cod_actividad, cod_actividad+"D04");
 var intento_05 = window.getIntentos(cod_actividad, cod_actividad+"D05");
 var intento_06 = window.getIntentos(cod_actividad, cod_actividad+"D06");
-
+var intento_07 = window.getIntentos(cod_actividad, cod_actividad+"D07");
 
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag1", 1);
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag2", 2);
@@ -119,15 +120,9 @@ window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag4", 4);
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag5", 5);
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag6", 6);
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag7", 7);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag4", 8);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag9", 9);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D06", "drag10", 10);
-
 
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D07", "texto1", 1);
 window.getRespuestaMultiple(cod_actividad, cod_actividad+"D07", "texto2", 2);
-window.getRespuestaMultiple(cod_actividad, cod_actividad+"D07", "texto3", 3);
-
 
 console.log("trae info guardada en BD");
 }
@@ -174,9 +169,9 @@ var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
 var respuesta = p.GetVar("respuesta");
-var respuesta_01 = p.GetVar("respuesta_01");
+var respuesta_02 = p.GetVar("respuesta_02");
 
-if (respuesta != respuesta_01) {
+if (respuesta != respuesta_02) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
   window.setLogro(cod_actividad, cod_diapositiva, logro);
@@ -208,9 +203,9 @@ var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
 var respuesta = p.GetVar("respuesta");
-var respuesta_01 = p.GetVar("respuesta_01");
+var respuesta_03 = p.GetVar("respuesta_03");
 
-if (respuesta != respuesta_01) {
+if (respuesta != respuesta_03) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
   window.setLogro(cod_actividad, cod_diapositiva, logro);
@@ -242,9 +237,9 @@ var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
 var respuesta = p.GetVar("respuesta");
-var respuesta_01 = p.GetVar("respuesta_01");
+var respuesta_04 = p.GetVar("respuesta_04");
 
-if (respuesta != respuesta_01) {
+if (respuesta != respuesta_04) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
   window.setLogro(cod_actividad, cod_diapositiva, logro);
@@ -276,9 +271,9 @@ var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var logro = p.GetVar("logro");
 var respuesta = p.GetVar("respuesta");
-var respuesta_01 = p.GetVar("respuesta_01");
+var respuesta_05 = p.GetVar("respuesta_05");
 
-if (respuesta != respuesta_01) {
+if (respuesta != respuesta_05) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
   window.setLogro(cod_actividad, cod_diapositiva, logro);
@@ -336,13 +331,11 @@ var drag4 = p.GetVar("drag4");
 var drag5 = p.GetVar("drag5");
 var drag6 = p.GetVar("drag6");
 var drag7 = p.GetVar("drag7");
-var drag8 = p.GetVar("drag8");
-var drag9 = p.GetVar("drag9");
-var drag10 = p.GetVar("drag10");
-var respuesta = [drag1,drag2,drag3,drag4,drag5,drag6,drag7,drag8,drag9,drag10];
-var respuesta_07 = p.GetVar("respuesta_07");
 
-if (respuesta != respuesta_07) {
+var respuesta = [drag1,drag2,drag3,drag4,drag5,drag6,drag7];
+var respuesta_06 = p.GetVar("respuesta_06");
+
+if (respuesta != respuesta_06) {
   console.log("no es igual");
   window.setIntentos(cod_actividad, cod_diapositiva);
   window.setLogro(cod_actividad, cod_diapositiva, logro);
@@ -375,9 +368,8 @@ var cod_diapositiva = p.GetVar("cod_diapositiva");
 
 var texto1 = localStorage.getItem(cod_diapositiva + "_texto1");
 var texto2 = localStorage.getItem(cod_diapositiva + "_texto2");
-var texto3 = localStorage.getItem(cod_diapositiva + "_texto3");
 
-console.log(texto1,texto2,texto3);
+console.log(texto1,texto2);
 }
 
 function Script17()
@@ -388,8 +380,7 @@ var cod_actividad = p.GetVar("cod_actividad");
 var cod_diapositiva = p.GetVar("cod_diapositiva");
 var texto1 = p.GetVar("texto1");
 var texto2 = p.GetVar("texto2");
-var texto3 = p.GetVar("texto3");
-var respuesta = [texto1,texto2,texto3];
+var respuesta = [texto1,texto2];
 var respuesta_08 = p.GetVar("respuesta_08");
 
 if (respuesta != respuesta_08) {
@@ -429,6 +420,8 @@ var respuesta_03 = window.getRespuesta(cod_actividad, cod_actividad+"D03");
 var respuesta_04 = window.getRespuesta(cod_actividad, cod_actividad+"D04");
 var respuesta_05 = window.getRespuesta(cod_actividad, cod_actividad+"D05");
 var respuesta_06 = window.getRespuesta(cod_actividad, cod_actividad+"D06");
+var respuesta_07 = window.getRespuesta(cod_actividad, cod_actividad+"D07");
+
 
 var solucion_01 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D01");
 var solucion_02 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D02");
@@ -436,6 +429,7 @@ var solucion_03 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D03
 var solucion_04 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D04");
 var solucion_05 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D05");
 var solucion_06 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D06");
+var solucion_07 = window.getEstadoSolucionario(cod_actividad, cod_actividad+"D07");
 
 
 
@@ -445,6 +439,7 @@ var intento_03 = window.getIntentos(cod_actividad, cod_actividad+"D03");
 var intento_04 = window.getIntentos(cod_actividad, cod_actividad+"D04");
 var intento_05 = window.getIntentos(cod_actividad, cod_actividad+"D05");
 var intento_06 = window.getIntentos(cod_actividad, cod_actividad+"D06");
+var intento_07 = window.getIntentos(cod_actividad, cod_actividad+"D07");
 
 
 var logro_01 = window.getLogro(cod_actividad, cod_actividad+"D01");
@@ -453,10 +448,11 @@ var logro_03 = window.getLogro(cod_actividad, cod_actividad+"D03");
 var logro_04 = window.getLogro(cod_actividad, cod_actividad+"D04");
 var logro_05 = window.getLogro(cod_actividad, cod_actividad+"D05");
 var logro_06 = window.getLogro(cod_actividad, cod_actividad+"D06");
+var logro_07 = window.getLogro(cod_actividad, cod_actividad+"D07");
 
 
 
-var arrDiapos = ["D01","D02","D03","D04","D05","D06"];
+var arrDiapos = ["D01","D02","D03","D04","D05","D06","D07"];
 
 window.getTotal(cod_actividad,arrDiapos);
 }
